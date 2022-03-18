@@ -1,0 +1,50 @@
+.about_sect_container {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* grid-auto-rows: 50%; */
+}
+
+.left_faction div {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-right: 50px;
+}
+
+.sec_title {
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+.right_faction {
+    padding: 20px;
+}
+
+.rf_title {
+    
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    color: #CB1E24;
+    margin-bottom: 12px;
+}
+
+.rf_story {
+    font-family: Quicksand, sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height:23px;
+    margin-bottom: 20px;
+}
+
+.rf_btn_read {
+    border: none;
+    width: 150px;
+    height: 45px;
+    background: #A32C2F;
+    color: #ffffff;
+    border-radius: 90px;
+}
