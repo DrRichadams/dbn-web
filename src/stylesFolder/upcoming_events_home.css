@@ -13,6 +13,8 @@
 }
 .upEventsRight {
     grid-column: span 2;
+    box-shadow: 6px 0 24px rgba(0, 0, 0, 0.5);
+    border-radius: 6px;
 }
 
 .uEventBox {
@@ -73,7 +75,8 @@
     font-size: 30px;
     color: #CB1E24;
     margin-bottom: 30px;
-
+    padding: 8px;
+    text-align: center;
 }
 
 .uer_title_texts {
@@ -112,6 +115,7 @@
 .uer_title_story {
     font-family: sans-serif;
     line-height: 23px;
+    margin-bottom: 18px;
 }
 
 .uer_texts {

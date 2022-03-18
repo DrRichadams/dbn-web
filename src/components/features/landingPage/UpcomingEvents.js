@@ -28,6 +28,8 @@ const UpcomingEvents = () => {
         },
     ])
     return (
+        <>
+        <div className="uerTitle">Upcoming Events</div>
         <div className="upcoming_events_container">
             <div className="upEventsLeft">
                 {
@@ -52,7 +54,6 @@ const UpcomingEvents = () => {
                 }
             </div>
             <div className="upEventsRight">
-                <div className="uerTitle">Upcoming Events</div>
                 <div className="uer_mid_box">
                     <div className="uer_imgs_box">
                         <img src={ueBanner} className="uer_big_img" />
@@ -71,6 +72,7 @@ const UpcomingEvents = () => {
                 <div className="uer_dots"></div>
             </div>
         </div>
+        </>
     )
 }
 
