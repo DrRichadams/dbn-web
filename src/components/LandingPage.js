@@ -3,6 +3,7 @@ import "../stylesFolder/landing_page.css"
 import BannerSliderHome from "./features/landingPage/BannerSliderHome"
 import AboutSect from "./features/landingPage/AboutSect"
 import BlogPostHighlights from "./features/landingPage/BlogPostHighlights"
+import UpcomingEvents from "./features/landingPage/UpcomingEvents"
 
 const LandingPage = () => {
     return(
@@ -10,6 +11,7 @@ const LandingPage = () => {
             <BannerSliderHome />
             <AboutSect />
             <BlogPostHighlights />
+            <UpcomingEvents />
         </div>
     )
 }
