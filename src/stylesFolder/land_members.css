@@ -1,11 +1,13 @@
 .members_land_container {
-    /* background-color: red; */
+    background-color: #fff;
     padding: 20px;
     margin: 80px 0;
+    margin-bottom: 200px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    border-radius: 6px;
 }
 
 .l_title {
@@ -31,5 +33,5 @@
 
 .mp_img_container img {
     width: 150px;
-    margin: 0 auto;
+    margin: 0 auto; 
 }

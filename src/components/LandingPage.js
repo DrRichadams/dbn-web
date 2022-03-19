@@ -5,6 +5,7 @@ import AboutSect from "./features/landingPage/AboutSect"
 import BlogPostHighlights from "./features/landingPage/BlogPostHighlights"
 import UpcomingEvents from "./features/landingPage/UpcomingEvents"
 import Members from "./features/landingPage/Members"
+import ContactUs from "./features/landingPage/ContactUs"
 
 const LandingPage = () => {
     return(
@@ -14,6 +15,7 @@ const LandingPage = () => {
             <BlogPostHighlights />
             <UpcomingEvents />
             <Members />
+            <ContactUs />
         </div>
     )
 }

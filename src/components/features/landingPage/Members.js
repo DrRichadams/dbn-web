@@ -16,7 +16,7 @@ const Members = () => {
     return(
         <div className="members_land_container">
             <h3 className="lm_title1 l_title">Members</h3>
-            <div className="lm_containers">
+            <div className="lm_containers"> 
                 <div className="lm_four_members mp_img_container">
                     <img src={lm1} />
                     <img src={lm2} />
