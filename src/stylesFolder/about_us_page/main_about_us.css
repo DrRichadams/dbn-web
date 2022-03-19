@@ -1,0 +1,56 @@
+.about_us_page_container {
+    min-height: 100vh;
+    margin-top: 50px;
+}
+
+.about_page_section2 {
+    margin-top: 150px;
+    padding: 20px 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.aps2_img_box img {
+    width: 380px;
+}
+
+.aps2_details_title{
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 53px;
+
+    color: #CB1E24;
+}
+
+.aps2_details_story{
+    font-family: Lato, sans-serif;
+    font-weight: 300;
+    font-size: 17px;
+    color: #000000;
+}
+
+.what_we_do {
+    padding: 20px 100px;
+    margin: 50px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.wwd_title{
+    font-family: Lato, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 25px;
+    color: #CB1E24;
+}
+
+.wwd_story {
+    font-family: Lato, sans-serif;
+    font-weight: 300;
+}

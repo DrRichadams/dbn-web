@@ -7,3 +7,16 @@
 body {
     background-color: #f5f5f5;
 }
+
+.rbs_container {
+    background-color: rgb(177, 49, 49);
+    color: #f5f5f5;
+    font-family: oswald, sans-serif;
+    font-size: 40px;
+    font-weight: 900;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
