@@ -1,0 +1,35 @@
+.members_land_container {
+    /* background-color: red; */
+    padding: 20px;
+    margin: 80px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.l_title {
+    font-family: Quicksand, sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 30px;
+    color: #CB1E24;
+    margin-top: 40px;
+}
+
+.lm_four_members {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+.lm_three_members, .lp_three_members {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.mp_img_container img {
+    width: 150px;
+    margin: 0 auto;
+}
