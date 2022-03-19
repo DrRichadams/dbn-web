@@ -13,7 +13,7 @@
 }
 .upEventsRight {
     grid-column: span 2;
-    box-shadow: 6px 0 24px rgba(0, 0, 0, 0.5);
+    box-shadow: 6px 0 24px rgba(0, 0, 0, 0.3);
     border-radius: 6px;
 }
 
