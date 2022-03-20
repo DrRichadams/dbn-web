@@ -8,6 +8,7 @@ import AboutUs from "./components/AboutUs";
 import EventsPage from "./components/EventsPage";
 import ClubCharter from "./components/ClubCharter";
 import BlogPosts from "./components/BlogPosts";
+import PhotoGallery from "./components/PhotoGallery";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route  path="/events" element={<EventsPage />} />
           <Route  path="/clubCharter" element={<ClubCharter />} />
           <Route  path="/blogPosts" element={<BlogPosts />} />
+          <Route  path="/photoGallery" element={<PhotoGallery />} />
         </Routes>
         <Footer />
       </div>
