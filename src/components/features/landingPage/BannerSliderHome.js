@@ -2,6 +2,7 @@ import React, { useState } from "react"
 import "../../../stylesFolder/banner_slider_home.css"
 import { v4 as uuidv4 } from "uuid"
 import banner_img from "../../../Resources/banner_img.png"
+import effect1 from "../../../Resources/effect1.png"
  
 const BannerSliderHome = () => {
 
@@ -29,7 +30,7 @@ const BannerSliderHome = () => {
     ])
 
     const [ curDisplay, setCurDisplay ] = useState(1)
-
+ 
     return(
         <div className="banner_slider_home_container">
             <div className="story_box">
@@ -41,6 +42,7 @@ const BannerSliderHome = () => {
                         </div>
                     )) 
                 }
+                <img src={effect1} alt="" className="effect1_banner_land" />
             </div>
             <div className="picture_box">
                 <img src={banner_img} alt="" />

@@ -3,6 +3,7 @@ import "../../../stylesFolder/upcoming_events_home.css"
 import { v4 as uuidv4 } from "uuid"
 import ueBanner from "../../../Resources/upcoming_events/ueBanner.png"
 import bph1_icon from "../../../Resources/upcoming_events/bph1_icon.png"
+import effect1 from "../../../Resources/effect1.png"
 
 const UpcomingEvents = () => {
 
@@ -26,7 +27,7 @@ const UpcomingEvents = () => {
             bigDate: "12-01-2022",
             story: "The Club is a unique platform for decision makers and influential members of the society."
         },
-    ])
+    ]) 
     return (
         <>
         <div className="uerTitle">Upcoming Events</div>
@@ -70,6 +71,10 @@ const UpcomingEvents = () => {
                     </div>
                 </div>
                 <div className="uer_dots"></div>
+            </div>
+            <div className="effects">
+                <img src={effect1} alt="" />
+                <img src={effect1} alt="" className="effect_adjast" />
             </div>
         </div>
         </>

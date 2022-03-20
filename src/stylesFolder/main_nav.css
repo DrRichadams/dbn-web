@@ -54,7 +54,7 @@ margin-bottom: 7px;
     font-style: normal;
     font-weight: 600;
     font-size: 23px;
-    line-height: 31px;
+    line-height: 31px; 
     color: #FFFFFF;
     margin-right: 20px;
 }
@@ -73,3 +73,103 @@ margin-bottom: 7px;
     color: #FFFFFF;
 }
 
+.main_nav_menu_box {
+    position: fixed;
+    background-color: #A32C2F;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    padding: 20px 200px;
+}
+
+.exit_bar {
+    background-color: #fff !important;
+}
+
+.collapsed_menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.exit_bar1 {
+    transform: rotate(45deg);
+}
+.exit_bar2 {
+    transform: rotate(-45deg);
+}
+
+.mnmb_main {
+    transform: translateX(100%);
+    opacity: 0;
+}
+
+.open_menu {
+    animation:  animateOpen 0.4s ease forwards;
+}
+.close_menu {
+    animation:  animateClose 0.4s ease forwards;
+}
+
+@keyframes animateOpen {
+    from{
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+@keyframes animateClose {
+    from{
+        transform: translateX(0%);
+        opacity: 1;
+    }
+    to{
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+}
+
+.mnmb_reversed {
+    background-color: #fff;
+    color: #CB1E24;
+}
+
+.mnmb_menu_nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.mnmb_left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mnmb_menu_contents {
+    width: 100%;
+    height: 70vh;
+    background-color: #fff;
+    margin-top: 20px;
+    border-radius: 6px;
+    background: linear-gradient(rgba(0, 0, 0, 0.651), rgba(0, 0, 0, 0.568)),url("../Resources//nav_banner.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 50px;
+}
+
+.mnmb_menu_contents ul li {
+    list-style: none;
+    margin-bottom: 12px;
+    color: #fff;
+    font-family: Lato, sans-serif;
+    font-size: 28px;
+    font-weight: 600;
+    
+}
