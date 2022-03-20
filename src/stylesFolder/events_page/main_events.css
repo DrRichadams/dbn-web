@@ -1,0 +1,122 @@
+.events_page_container {
+    margin-top: 20px;
+}
+
+.events_slider {
+    /* background-color: red; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.es_left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 15px;
+}
+
+.esl_title {
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+}
+
+.esl_numbering {
+    /* background-color: grey; */
+    width: 80px;
+    height: 80px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-right: 20px;
+
+    transform: rotate(-60deg);
+}
+
+.esl_num_devisor {
+    width: 50px;
+    height: 2px;
+    background-color: #01050fa2;
+
+    /* transform: rotate(-55deg); */
+    margin: 6px;
+}
+
+.esl_cur_num {
+    /* padding-right: 28px; */
+    font-family: Lato, sans-serif;
+    font-size: 23px;
+    font-weight: 300;
+    color: #CB1E24;
+
+    transform: rotate(60deg);
+}
+.esl_num_max {
+    /* padding-left: 28px; */
+    font-family: Lato, sans-serif;
+    font-size: 23px;
+    font-weight: 300;
+
+    transform: rotate(60deg);
+}
+
+.esl_title_text{
+    font-family: 'Open Sans';
+    font-weight: 700;
+    font-size: 19px;
+    line-height: 48px;
+    display: flex;
+    align-items: center;
+
+    color: #CB1E24;
+
+}
+
+
+.esl_story {
+    padding: 15px;
+    font-family: Lato;
+    font-weight: 300;
+}
+
+.esl_controls {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+
+    align-self: center;
+    margin-top: 25px;
+}
+
+.esl_controls div {
+    background-color: #fff;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    box-shadow: 4px 0 18px rgba(0, 0, 0, 0.349);
+}
+
+.es_right img {
+    width: 400px;
+}
+
+.events_bottomer {
+    background-color: #fff;
+    color: #CB1E24;
+    padding: 50px 100px;
+    margin: 50px 90px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    font-family: Lato, sans-serif;
+    font-weight: 600;
+}

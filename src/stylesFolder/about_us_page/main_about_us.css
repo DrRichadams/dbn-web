@@ -226,7 +226,7 @@
 }
 
 .fsb1 {
-    background: linear-gradient(rgba(0, 0, 0, 0.212), rgba(0, 0, 0, 0.185)), url("../../Resources/about_page/fees1.png");
+    background: linear-gradient(rgba(0, 0, 0, 0.212), rgba(0, 0, 0, 0.452)), url("../../Resources/about_page/fees1.png");
     background-position: center;
     background-size: cover;
 }
