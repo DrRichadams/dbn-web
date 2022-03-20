@@ -110,3 +110,193 @@
     width: 60px;
     margin-bottom: 8px;
 }
+
+.wcj_params{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.who_can_join_container{
+    background-color:#A32C2F;
+    padding: 30px 50px;
+    margin: 200px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: relative;
+    border-radius: 6px;
+}
+
+.whocan_num{
+    color: #ffffff;
+    font-family: Lato, sans-serif;
+    font-weight: 600;
+    border-bottom: 1px solid transparent;
+    padding: 8px;
+}
+
+.item_text {
+    color: #ffffff;
+    border-bottom: 1px solid #ffffffa1;
+    width: 230px;
+    padding: 8px;
+    font-family: Lato, sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+}
+
+.whocan_box {
+    display: flex;
+    align-items: center;
+}
+
+.wcj_right_box{
+    /* background-color: blue; */
+}
+
+.wcj_right_box img {
+    /* width: 380px; */
+    height: 100%;
+    position: absolute;
+    top: -50px;
+    right: 30px;
+    border-radius: 6px;
+}
+
+.wcj_title {
+    font-family: Lato, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 53px;
+    display: flex;
+    align-items: center;
+
+    color: #FFFFFF;
+}
+
+.wcj_story {
+    font-family: Lato, sans-serif;
+    color: #ffffff;
+    line-height: 20px;
+    margin-bottom: 10px;
+}
+
+.wcj_params_box {
+    margin: 15px 0;
+}
+
+.wcj_btn {
+    width: 200px;
+    padding: 15px;
+    font-family: Lato, sans-serif;
+    font-weight: 900;
+
+    background: #FFFFFF;
+    color: #A32C2F;
+    border: none;
+    border-radius: 50px;
+}
+
+.fees_subscriptions{
+    font-family: Lato, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 50px;
+
+    color: #CB1E24;
+}
+
+.fees_subscription_boxes {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    padding: 0 60px;
+}
+.fsb {
+    width: 450px;
+    height: 350px;
+    margin: 0 auto;
+    display: flex;
+    align-items: flex-end;
+    border-radius: 6px;
+}
+
+.fsb1 {
+    background: linear-gradient(rgba(0, 0, 0, 0.212), rgba(0, 0, 0, 0.185)), url("../../Resources/about_page/fees1.png");
+    background-position: center;
+    background-size: cover;
+}
+
+.fsb2 {
+    background: linear-gradient(rgba(0, 0, 0, 0.212), rgba(0, 0, 0, 0.185)), url("../../Resources/about_page/fees2.png");
+    background-position: center;
+    background-size: cover;
+}
+
+.fsb_contain {
+    padding: 15px;
+}
+
+.fsb_contain img {
+    width: 60px;
+}
+
+.fsb_fees {
+    color: #ffffff;
+    font-family: Lato, sans-serif;
+    font-size: 25px;
+    font-weight: 300;
+    margin-left: 10px;
+}
+
+.benefits{ 
+    width: 100%;
+    height: 450px;
+    padding: 100px;
+    margin-bottom: 60px;
+
+    background: #A32C2F;
+    border-radius: 8px;
+    position: relative;
+
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 30px;
+}
+
+.benefits_title{
+    font-family: Lato, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 53px;
+
+    color: #FFFFFF;
+}
+
+.act_benefit_points {
+    margin-left: 20px;
+}
+
+.act_benefit_points li {
+    color: #ffffff;
+    font-family: Lato, sans-serif;
+    font-size: 15px;
+    line-height: 25px;
+    font-weight: 300;
+}
+
+.right_benefits {
+    /* background-color: blue; */
+}
+
+.right_benefits img {
+    position: absolute;
+    height: 120%;
+    top: -30px;
+    right: 0;
+}

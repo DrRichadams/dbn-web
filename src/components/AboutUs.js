@@ -6,6 +6,10 @@ import { v4 as uuidv4 } from "uuid"
 import icon1 from "../Resources/about_page/icon1.png"
 import icon2 from "../Resources/about_page/icon2.png"
 import icon3 from "../Resources/about_page/icon3.png"
+import wcj_img from "../Resources/about_page/wcj.png"
+import fees_icon1 from "../Resources/about_page/fees_icon1.png"
+import fees_icon2 from "../Resources/about_page/fees_icon2.png"
+import img_overlay from "../Resources/about_page/img_overlay.png"
 
 const AboutUs = () => {
     const [ threeboxes ] = useState([
@@ -27,6 +31,17 @@ const AboutUs = () => {
             title: "Development",
             text: "We provide a business, public affairs and development resource and linkage centre for our members",
         },
+    ])
+
+    const [ whocan, setWhocan ] = useState([
+        { id: uuidv4(), num: "01", text: "The Diplomatic Community" },
+        { id: uuidv4(), num: "02", text: "Senior Business Executives" },
+        { id: uuidv4(), num: "03", text: "Expatriates" },
+        { id: uuidv4(), num: "04", text: "NGO's and IGO's" },
+        { id: uuidv4(), num: "05", text: "UN Missions" },
+        { id: uuidv4(), num: "06", text: "Corporates" },
+        { id: uuidv4(), num: "07", text: "Gorvenment Institutions" },
+        { id: uuidv4(), num: "08", text: "Creative Sector" },
     ])
     return(
         <div className="about_us_page_container">
@@ -65,6 +80,80 @@ const AboutUs = () => {
                         </div>
                     ))
                 }
+            </div>
+
+            <div className="who_can_join_container">
+                <div className="wcj_left_box">
+                    <h3 className="wcj_title">Who Can Join</h3>
+                    <p className="wcj_story1 wcj_story">
+                        Membership into the Club is strictly by invitation by either the Board, Secretariat or full members. Qualifying members are drawn from:
+                    </p>
+                    <div className="wcj_params">
+                        <div className="wcj_params_box_1 wcj_params_box">
+                            {
+                                whocan.map((item, index) => (
+                                    index <= 3 ? <div className="whocan_box">
+                                    <div className="whocan_num">{item.num}</div>
+                                    <div className="item_text">{item.text}</div>
+                                </div> : ""
+                                ))
+                            }
+                        </div>
+                        <div className="wcj_params_box_2 wcj_params_box">
+                            {
+                                whocan.map((item, index) => (
+                                    index >= 4 ? <div className="whocan_box">
+                                    <div className="whocan_num">{item.num}</div>
+                                    <div className="item_text">{item.text}</div>
+                                </div> : ""
+                                ))
+                            }
+                        </div>
+                    </div>
+                    <p className="wcj_story2 wcj_story">
+                        Individuals, corporates or bodies within the qualifying categories are free to make an application with the Club which will then be reviewed before an invitation to join is submitted.
+                    </p>
+                    <button className="wcj_btn">
+                        Register To Join
+                    </button>
+                </div>
+                <div className="wcj_right_box">
+                    <img src={wcj_img} alt="" />
+                </div>
+            </div>
+            <div className="fees_subscriptions">Membership Fees and Subscriptions</div>
+
+            <div className="fees_subscription_boxes">
+                <div className="fsb fsb1">
+                    <div className="fsb_contain">
+                        <img src={fees_icon1} alt="" />
+                        <p className="fsb_fees">Individuals: $150</p>
+                    </div>
+                </div>
+
+                <div className="fsb fsb2">
+                    <div className="fsb_contain">
+                        <img src={fees_icon2} alt="" />
+                        <p className="fsb_fees">Corporates: $500</p>
+                    </div>
+                </div>
+            </div>
+
+            <div className="benefits">
+                <div className="left_benefits">
+                    <h3 className="benefits_title">Additional Benefits</h3>
+                    <ul className="act_benefit_points">
+                        <li>Access to the Diplomat Business Networking Club’s events, database and resource centre</li>
+                        <li>Free membership to the Diplomat Lounge featuring unique dining experiences, conference rooms and business lounge.</li>
+                        <li>Exclusive lifestyle discounts and privilege service from our partners</li>
+                        <li>Exposure in the Diplomat Magazine physical and digital platforms with preferential rates and placements</li>
+                        <li>Market linkages and business development opportunities</li>
+
+                    </ul>
+                </div>
+                <div className="right_benefits">
+                    <img src={img_overlay} alt="" />
+                </div>
             </div>
         </div>
     )
