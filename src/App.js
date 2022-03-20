@@ -7,6 +7,7 @@ import Footer from "./components/commons/Footer";
 import AboutUs from "./components/AboutUs";
 import EventsPage from "./components/EventsPage";
 import ClubCharter from "./components/ClubCharter";
+import BlogPosts from "./components/BlogPosts";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route  path="/about" element={<AboutUs />} />
           <Route  path="/events" element={<EventsPage />} />
           <Route  path="/clubCharter" element={<ClubCharter />} />
+          <Route  path="/blogPosts" element={<BlogPosts />} />
         </Routes>
         <Footer />
       </div>
