@@ -96,3 +96,42 @@
     font-family: Lato, sans-serif;
     font-weight: 300;
 }
+
+.bg_latest_box_container {
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.bg_latest_box {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    padding: 0 15px;
+    margin: 0 35px;
+    border-bottom: 2px solid grey;
+}
+
+.bg_latest_box div {
+    padding: 12px 30px;
+    /* min-height: 200px; */
+}
+
+.bgl_three img {
+    width: 100%;
+}
+
+.bgl_one h3 {
+    font-family: Lato, sans-serif;
+    font-weight: 900;
+    margin-bottom: 8px;
+}
+
+.bgl_one p {
+    font-family: Lato, sans-serif;
+    color:#A32C2F;
+}
+
+.bgl_two {
+    font-family: Lato, sans-serif;
+    font-weight: 300;
+}

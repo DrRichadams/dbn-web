@@ -4,6 +4,10 @@ import { v4 as uuidv4 } from "uuid"
 import ResevedBannerSpace from "./ReservedBannerSpace"
 import { GoSearch } from "react-icons/go"
 import article_current from "../Resources/blog_posts_page/article_current1.png"
+import lat1 from "../Resources/blog_posts_page/lat1.png"
+import lat2 from "../Resources/blog_posts_page/lat2.png"
+import lat3 from "../Resources/blog_posts_page/lat3.png"
+import lat4 from "../Resources/blog_posts_page/lat4.png"
 
 const BlogPosts = () => {
 
@@ -15,6 +19,37 @@ const BlogPosts = () => {
     ])
 
     const [ current, setCurrent ] = useState(1)
+
+    const [ latest, setLatest ] = useState([
+        {
+            id: uuidv4(),
+            image: lat1,
+            title: "More than another check, founders need activation energy",
+            name: "By Natasha Mascarenhas",
+            story: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque atque praesentium iusto, dolores voluptatibus dolorem libero illo in molestiae distinctio.",
+        },
+        {
+            id: uuidv4(),
+            image: lat2,
+            title: "More than another check, founders need activation energy",
+            name: "By Natasha Mascarenhas",
+            story: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque atque praesentium iusto, dolores voluptatibus dolorem libero illo in molestiae distinctio.",
+        },
+        {
+            id: uuidv4(),
+            image: lat3,
+            title: "More than another check, founders need activation energy",
+            name: "By Natasha Mascarenhas",
+            story: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque atque praesentium iusto, dolores voluptatibus dolorem libero illo in molestiae distinctio.",
+        },
+        {
+            id: uuidv4(),
+            image: lat4,
+            title: "More than another check, founders need activation energy",
+            name: "By Natasha Mascarenhas",
+            story: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque atque praesentium iusto, dolores voluptatibus dolorem libero illo in molestiae distinctio.",
+        },
+    ])
 
     return(
         <div className="blog_posts_container">
@@ -59,6 +94,27 @@ const BlogPosts = () => {
                     <br /><br />
                     The average age for a Z Fellow is 20 to 25 years old, meaning that the program has successfully convinced first-time founders to take a jump. Founder Cory Levy attributes interest to the program’s pre-requisite: You only have to take one week off from work.
                 </p>
+            </div>
+
+            <div className="featured_title">
+                The Latest
+            </div>
+
+            <div className="bg_latest_box_container">
+                {
+                    latest.map((item, index) => (
+                        <div key={item.id} className="bg_latest_box">
+                            <div className="bgl_one">
+                                <h3>{item.title}</h3>
+                                <p>{item.name}</p>
+                            </div>
+                            <div className="bgl_two">{item.story}</div>
+                            <div className="bgl_three">
+                                <img src={item.image} alt="" />
+                            </div>
+                        </div>
+                    ))
+                }
             </div>
         </div>
     )
