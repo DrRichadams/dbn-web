@@ -6,6 +6,7 @@ import LandingPage from "./components/LandingPage";
 import Footer from "./components/commons/Footer";
 import AboutUs from "./components/AboutUs";
 import EventsPage from "./components/EventsPage";
+import ClubCharter from "./components/ClubCharter";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Route exact path="/" element={<LandingPage />} />
           <Route  path="/about" element={<AboutUs />} />
           <Route  path="/events" element={<EventsPage />} />
+          <Route  path="/clubCharter" element={<ClubCharter />} />
         </Routes>
         <Footer />
       </div>
