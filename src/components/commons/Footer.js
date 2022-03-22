@@ -2,7 +2,7 @@ import React from "react"
 import "../../stylesFolder/footer_main.css"
 import footer_logo from "../../Resources/NavBarLogo.png"
 
-const Footer = () => {
+const Footer = () => { 
     return (
         <div className="main_footer_container">
             <div className="upper_main_footer">

@@ -11,7 +11,7 @@
     align-items: center;
     width: 100%;
     margin-right: 50px;
-}
+} 
 
 .sec_title {
     font-family: sans-serif;
@@ -47,4 +47,14 @@
     background: #A32C2F;
     color: #ffffff;
     border-radius: 90px;
+}
+
+
+@media (max-width: 1020px) {
+    .about_sect_container {
+        margin-top: 100px;
+        margin-bottom: 100px;
+        grid-template-columns: 1fr;
+        /* grid-auto-rows: 50%; */
+    }
 }

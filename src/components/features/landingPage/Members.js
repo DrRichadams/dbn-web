@@ -12,7 +12,7 @@ import lp1 from "../../../Resources/landing_members/lp1.png"
 import lp2 from "../../../Resources/landing_members/lp2.png"
 import lp3 from "../../../Resources/landing_members/lp3.png"
 
-const Members = () => {
+const Members = () => { 
     return(
         <div className="members_land_container">
             <h3 className="lm_title1 l_title">Members</h3>

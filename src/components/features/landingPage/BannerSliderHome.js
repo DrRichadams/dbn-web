@@ -3,7 +3,7 @@ import "../../../stylesFolder/banner_slider_home.css"
 import { v4 as uuidv4 } from "uuid"
 import banner_img from "../../../Resources/banner_img.png"
 import effect1 from "../../../Resources/effect1.png"
- 
+  
 const BannerSliderHome = () => {
 
     const [ bannerContents, setBannerContents ] = useState([
@@ -47,8 +47,8 @@ const BannerSliderHome = () => {
             <div className="picture_box">
                 <img src={banner_img} alt="" />
             </div>
-        </div>
+        </div> 
     )
-}
+} 
 
 export default BannerSliderHome

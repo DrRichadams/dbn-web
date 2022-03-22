@@ -14,7 +14,7 @@
     grid-column: 1 / 2;
 }
 
-.upper_right_main_footer {
+.upper_right_main_footer { 
     grid-column: 3 / 4;
 }
 
@@ -71,4 +71,13 @@
     justify-content: space-between;
     border-top: 2px solid #CB1E24;
     padding: 20px 8px;
+}
+
+
+
+@media (max-width: 850px) {
+    .upper_main_footer {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
 }

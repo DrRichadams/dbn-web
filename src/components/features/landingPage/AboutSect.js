@@ -11,7 +11,7 @@ const AboutSect = () => {
     return(
         <div className="about_sect_container">
             <div className="left_faction">
-                <div className="lf_bus_partnerships">
+                <div className="lf_bus_partnerships"> 
                     <img src={bus_partner} alt="" />
                     <p className="sec_title">Business Partnerships</p>
                 </div>

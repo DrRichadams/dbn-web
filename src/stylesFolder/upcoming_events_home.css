@@ -7,7 +7,7 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 50px;
     position: relative;
-}
+} 
 
 .upEventsLeft {
     grid-column: span 1;padding-top: 60px;
@@ -136,4 +136,128 @@
 .effect_adjast {
     bottom: 15px;
     transform: rotate(180deg);
+}
+
+.upEvents_mobile_box_title {
+    background-color: #A32C2F;
+    color: #fff;
+    font-family: Lato, sans-serif;
+    width: 100%;
+}
+
+.upEvents_mobile_box_title {
+    display: flex;
+    width: 100%;
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px;
+    border-radius: 6px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.mobi_imgs_box {
+    /* background-color: blue; */
+    /* height: 300px; */
+}
+
+.mobi_big_img {
+    object-fit: cover;
+    width: 100%;
+}
+
+.mobi_small_img {
+    transform: translateY(-40px);
+    margin-left: 15px;
+}
+
+.mobiTitle {
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    /* font-size: 30px; */
+    color: #CB1E24;
+    /* margin-bottom: 30px; */
+    /* padding: 8px; */
+    text-align: center;
+}
+
+.mobi_title_texts {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    /* margin-bottom: 5px; */
+}
+
+.mobi_title_title {
+    font-family: 'Quicksand', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 40px;
+    /* identical to box height */
+
+    display: flex;
+    align-items: center;
+
+    color: #CB1E24;
+}
+
+.mobi_title_date{
+    font-family: 'Goldplay';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 33px;
+    display: flex;
+    align-items: center;
+
+    color: #585858;
+}
+
+.mobi_title_story {
+    font-family: sans-serif;
+    line-height: 23px;
+    margin-bottom: 18px;
+}
+
+.mobi_texts {
+    padding: 0 35px;
+}
+
+@media (max-width: 960px) {
+    .upEventsLeft,
+    .upEventsRight {
+        display: none;
+    }
+
+    .upEvents_mobile {
+        position: relative;
+        z-index: 5000;
+        grid-column: 1 / -1;
+        /* display: flex;
+        width: 100%;
+        flex-direction: column; */
+        
+    }
+
+    .upEvents_mobile div {
+        margin-bottom: 3px;
+    }
 }
