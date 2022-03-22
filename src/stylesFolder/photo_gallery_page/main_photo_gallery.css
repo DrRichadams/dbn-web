@@ -1,0 +1,103 @@
+.photo_gallery_container {
+    margin-top: 20px;
+}
+
+.photo_gallery_btns {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.turkey_btn{
+    background: #A32C2F;
+    color: #fff;
+    border: none;
+    width: 180px;
+    padding: 12px;
+    border-radius: 7px;
+    font-family: Lato, sans-serif;
+    font-weight: 600;
+}
+
+.netherlands_btn {
+    background: transparent;
+    color: #000;
+    border: none;
+    width: 180px;
+    padding: 12px;
+    border-radius: 7px;
+    font-family: Lato, sans-serif;
+    font-weight: 600;
+}
+
+.act_gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 15px;
+    grid-template-areas: "rec8 rec8 rec6"
+                         "rec8 rec8 rec7"
+                         "rec10 rec9 rec7"
+                         "rec1 rec3 rec3"
+                         "rec2 rec3 rec3"
+                         "rec2 rec4 rec5";
+}
+
+.act_gallery img {
+    width: 100%;
+}
+
+
+.rec1 {
+    grid-area: rec1;
+}
+.rec2 {
+    grid-area: rec2;
+}
+.rec3 {
+    grid-area: rec3;
+}
+.rec4 {
+    grid-area: rec4;
+}
+.rec5 {
+    grid-area: rec5;
+}
+.rec6 {
+    grid-area: rec6;
+}
+.rec7 {
+    grid-area: rec7;
+}
+.rec8 {
+    grid-area: rec8;
+}
+.rec9 {
+    grid-area: rec9;
+}
+.rec10 {
+    grid-area: rec10;
+}
+
+.download_gallery_box {
+    /* margin: 80px 50px; */
+    width: 100%;
+    height: 150px;
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(-20px);
+}
+
+.download_gallery_btn{
+    width: 300px;
+    height: 50px;
+    border: none;
+
+    background: #A32C2F;
+    color: #fff;
+    border-radius: 7px;
+    font-family: Lato, sans-serif;
+    font-weight: 600;
+}

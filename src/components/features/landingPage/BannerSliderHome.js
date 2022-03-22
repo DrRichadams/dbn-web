@@ -3,6 +3,7 @@
 import React, { useState } from "react"
 import "../../../stylesFolder/banner_slider_home.css"
 import { v4 as uuidv4 } from "uuid"
+<<<<<<< HEAD
 import banner_img from "../../../Resources/banner_img.png";
 import styled from 'styled-components';
 // import { Swiper, SwiperSlide } from "swiper/react";
@@ -478,6 +479,10 @@ $color-bullets: $black;
 }
 
 `
+=======
+import banner_img from "../../../Resources/banner_img.png"
+import effect1 from "../../../Resources/effect1.png"
+>>>>>>> 7eb3fbb7f937cb3e7d47eb95d805d6e92f626c74
  
 const BannerSliderHome = () => {
 
@@ -505,7 +510,7 @@ const BannerSliderHome = () => {
     ])
 
     const [ curDisplay, setCurDisplay ] = useState(1)
-
+ 
     return(
         <Wrapper className="banner_slider_home_container">
             {/* <div className="story_box">
@@ -517,6 +522,7 @@ const BannerSliderHome = () => {
                         </div>
                     )) 
                 }
+                <img src={effect1} alt="" className="effect1_banner_land" />
             </div>
             <div className="picture_box">
                 <img src={banner_img} alt="" />
