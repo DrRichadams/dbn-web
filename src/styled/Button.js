@@ -3,8 +3,11 @@ import styled from 'styled-components';
 
 const Wrapper = styled.button`
     height:40px;
-    padding:0 10px;
+    padding:0 20px;
     background:${props => props.bg};
+    border-radius:26px;
+    border:none;
+    
 `
 
 function Button({children, bg}) {

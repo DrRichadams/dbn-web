@@ -3,9 +3,9 @@
 import React, { useState } from "react"
 import "../../../stylesFolder/banner_slider_home.css"
 import { v4 as uuidv4 } from "uuid"
-<<<<<<< HEAD
 import banner_img from "../../../Resources/banner_img.png";
 import styled from 'styled-components';
+import effect1 from "../../../Resources/effect1.png"
 // import { Swiper, SwiperSlide } from "swiper/react";
 // import "swiper/css";
 // import "swiper/css/free-mode";
@@ -479,10 +479,7 @@ $color-bullets: $black;
 }
 
 `
-=======
-import banner_img from "../../../Resources/banner_img.png"
-import effect1 from "../../../Resources/effect1.png"
->>>>>>> 7eb3fbb7f937cb3e7d47eb95d805d6e92f626c74
+
  
 const BannerSliderHome = () => {
 
@@ -512,7 +509,8 @@ const BannerSliderHome = () => {
     const [ curDisplay, setCurDisplay ] = useState(1)
  
     return(
-        <Wrapper className="banner_slider_home_container">
+        <Wrapper >
+			
             {/* <div className="story_box">
                 {
                     bannerContents.map((item, index) => (
@@ -527,139 +525,7 @@ const BannerSliderHome = () => {
             <div className="picture_box">
                 <img src={banner_img} alt="" />
             </div> */}
-            <div class="bdt-timeline-container">
-  <div class="upk-salf-slider-wrapper">
-        <div class="swiper-container mySwiper2">
-            <div class="swiper-wrapper">
-                <div class="upk-salf-item swiper-slide">
-                    <div class="upk-salf-image-wrap">
-                        <img class="upk-xanc-img" src="https://picsum.photos/id/1011/1200/800" />
-                    </div>
-                    <div class="upk-salf-content-wrap">
-                        <h3 class="upk-salf-title" data-swiper-parallax-y="-150" data-swiper-parallax-duration="1200">
-                            we help you make modern interior
-                        </h3>
-                        <div class="upk-salf-desc" data-swiper-parallax-y="-200" data-swiper-parallax-duration="1400" >we will help you to make an elegant and luxurius interrior designed by porfessional interrior designer.</div>
-                        <div class="upk-salf-button" data-swiper-parallax-y="-300" data-swiper-parallax-duration="1500">
-                            <a class="link link--arrowed" href="#">read more
-                                <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 32 32">
-                                    <g fill="none" stroke="#ff215a" stroke-width="1.5" stroke-linejoin="round" stroke-miterlimit="10">
-                                    <circle class="arrow-icon--circle" cx="16" cy="16" r="15.12"></circle>
-                                    <path class="arrow-icon--arrow" d="M16.14 9.93L22.21 16l-6.07 6.07M8.23 16h13.98"></path>
-                                    </g>
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="upk-salf-item swiper-slide">
-                    <div class="upk-salf-image-wrap">
-                        <img class="upk-xanc-img" src="https://picsum.photos/id/1026/1200/800" />
-                    </div>
-                    <div class="upk-salf-content-wrap">
-                        <h3 class="upk-salf-title" data-swiper-parallax-y="-150" data-swiper-parallax-duration="1200">
-                            we help you make modern interior
-                        </h3>
-                        <div class="upk-salf-desc" data-swiper-parallax-y="-200" data-swiper-parallax-duration="1400">we will help you to make an elegant and luxurius interrior designed by porfessional interrior designer.</div>
-
-                            <div class="upk-salf-button" data-swiper-parallax-y="-300" data-swiper-parallax-duration="1500">
-                            <a class="link link--arrowed" href="#">read more
-                                <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 32 32">
-                                    <g fill="none" stroke="#ff215a" stroke-width="1.5" stroke-linejoin="round" stroke-miterlimit="10">
-                                    <circle class="arrow-icon--circle" cx="16" cy="16" r="15.12"></circle>
-                                    <path class="arrow-icon--arrow" d="M16.14 9.93L22.21 16l-6.07 6.07M8.23 16h13.98"></path>
-                                    </g>
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="upk-salf-item swiper-slide">
-                    <div class="upk-salf-image-wrap">
-                        <img class="upk-xanc-img" src="https://picsum.photos/id/201/1200/800" />
-                    </div>
-                    <div class="upk-salf-content-wrap">
-                        <h3 class="upk-salf-title" data-swiper-parallax-y="-150" data-swiper-parallax-duration="1200">
-                            we help you make modern interior
-                        </h3>
-                        <div class="upk-salf-desc" data-swiper-parallax-y="-200" data-swiper-parallax-duration="1400">we will help you to make an elegant and luxurius interrior designed by porfessional interrior designer.</div>
-
-                            <div class="upk-salf-button" data-swiper-parallax-y="-300" data-swiper-parallax-duration="1500">
-                            <a class="link link--arrowed" href="#">read more
-                                <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 32 32">
-                                    <g fill="none" stroke="#ff215a" stroke-width="1.5" stroke-linejoin="round" stroke-miterlimit="10">
-                                    <circle class="arrow-icon--circle" cx="16" cy="16" r="15.12"></circle>
-                                    <path class="arrow-icon--arrow" d="M16.14 9.93L22.21 16l-6.07 6.07M8.23 16h13.98"></path>
-                                    </g>
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-              
-                <div class="upk-salf-item swiper-slide">
-                    <div class="upk-salf-image-wrap">
-                        <img class="upk-xanc-img" src="https://picsum.photos/id/167/1200/800" />
-                    </div>
-                    <div class="upk-salf-content-wrap">
-                        <h3 class="upk-salf-title" data-swiper-parallax-y="-150" data-swiper-parallax-duration="1200">
-                            we help you make modern interior
-                        </h3>
-                        <div class="upk-salf-desc" data-swiper-parallax-y="-200" data-swiper-parallax-duration="1400">we will help you to make an elegant and luxurius interrior designed by porfessional interrior designer.</div>
-
-                            <div class="upk-salf-button" data-swiper-parallax-y="-300" data-swiper-parallax-duration="1500">
-                            <a class="link link--arrowed" href="#">read more
-                                <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 32 32">
-                                    <g fill="none" stroke="#ff215a" stroke-width="1.5" stroke-linejoin="round" stroke-miterlimit="10">
-                                    <circle class="arrow-icon--circle" cx="16" cy="16" r="15.12"></circle>
-                                    <path class="arrow-icon--arrow" d="M16.14 9.93L22.21 16l-6.07 6.07M8.23 16h13.98"></path>
-                                    </g>
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="upk-page-scroll">
-            <a class="arrow-up">
-                <div class="long-arrow-left"></div>
-                <span class="arrow-slide"></span>
-            </a>
-        </div>
-        <div class="upk-salf-nav-pag-wrap">
-            
-            <div class="upk-salf-navigation">
-                <div class="upk-button-prev upk-n-p">
-                    <a class="link link--arrowed" href="#">
-                        <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 32 32">
-                            <g fill="none" stroke="#ff215a" stroke-width="1.5" stroke-linejoin="round" stroke-miterlimit="10">
-                            <circle class="arrow-icon--circle" cx="16" cy="16" r="15.12"></circle>
-                            <path class="arrow-icon--arrow" d="M16.14 9.93L22.21 16l-6.07 6.07M8.23 16h13.98"></path>
-                            </g>
-                        </svg>
-                    </a>
-                </div>
-                <div class="upk-button-next upk-n-p">
-                    <a class="link link--arrowed" href="#">
-                        <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 32 32">
-                            <g fill="none" stroke="#ff215a" stroke-width="1.5" stroke-linejoin="round" stroke-miterlimit="10">
-                            <circle class="arrow-icon--circle" cx="16" cy="16" r="15.12"></circle>
-                            <path class="arrow-icon--arrow" d="M16.14 9.93L22.21 16l-6.07 6.07M8.23 16h13.98"></path>
-                            </g>
-                        </svg>
-                    </a>
-                </div>
-            </div>
-
-            <div class="upk-salf-pagi-wrap">
-                <div class="swiper-pagination"></div>
-            </div>
-        </div>
-    </div>
-    </div>
+           
         </Wrapper>
     )
 }

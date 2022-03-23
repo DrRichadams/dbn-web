@@ -1,10 +1,10 @@
 import React from 'react'
-import BannerSliderHome from '../components/features/landingPage/BannerSliderHome'
+import BannerHome from '../components/features/landingPage/BannerHome'
 
 function Home() {
   return (
     <>
-     <BannerSliderHome />
+     <BannerHome />
     </>
   )
 }
