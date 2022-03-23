@@ -24,14 +24,14 @@ const EventsPage = () => {
                         Open Walls Embassy Day provides guests a tour of the world without jetlag. The various embassies assist with information on education, employment, travel and investment. They also showcase their culture and tradition through cuisines, music, fine art and dance 
                     </div>
                     <div className="esl_controls">
-                        <div className="eslc_left"><FiChevronLeft size={25} color="#CB1E24" /></div>
-                        <div className="eslc_right"><FiChevronRight size={25} color="#CB1E24" /></div>
+                        <div className="eslc_left"><FiChevronLeft size={25} /></div>
+                        <div className="eslc_right"><FiChevronRight size={25} /></div>
                     </div>
                 </div>
                 <div className="es_right">
                     <img src={event_img} alt="" />
                 </div>
-            </div>
+            </div> 
             <div className="events_bottomer">
                 We organize high profile events with strong networking power, interesting topics & B2B connections for our members
             </div>
