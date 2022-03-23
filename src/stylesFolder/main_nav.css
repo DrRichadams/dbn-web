@@ -13,7 +13,7 @@
 
 .menu_btn {
     height: 60px;
-    width: 60px;
+    width: 60px; 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -52,7 +52,7 @@ margin-bottom: 7px;
     padding: 10px;
     background: #A32C2F;
     border-radius: 50px;
-    border: none;
+    border: 2px solid #A32C2F;
     font-family: 'Hubballi', sans-serif;
     font-style: normal;
     font-weight: 600;
@@ -60,20 +60,32 @@ margin-bottom: 7px;
     line-height: 31px; 
     color: #FFFFFF;
     margin-right: 20px;
+    cursor: pointer;
 }
+
+.right_nav_content .join_us_nav_btn:hover {
+    background-color: transparent;
+    color: #A32C2F;
+}
+
 .contact_us_nav_btn {
     width: 191px;
     /* height: 51px; */
     padding: 10px;
     background: #CB1E24;
     border-radius: 50px;
-    border: none;
+    border: 2px solid #CB1E24;
     font-family: 'Hubballi', sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 23px;
     line-height: 31px;
     color: #FFFFFF;
+}
+
+.right_nav_content .contact_us_nav_btn:hover {
+    background-color: transparent;
+    color: #CB1E24;
 }
 
 .main_nav_menu_box {
@@ -140,6 +152,12 @@ margin-bottom: 7px;
 .mnmb_reversed {
     background-color: #fff;
     color: #CB1E24;
+    border: 2px solid #fff;
+}
+
+.mnmb_reversed:hover {
+    background-color: transparent;
+    color: #fff;
 }
 
 .mnmb_menu_nav {
@@ -170,11 +188,19 @@ margin-bottom: 7px;
 .mnmb_menu_contents ul li {
     list-style: none;
     margin-bottom: 12px;
-    color: #fff;
+    color: #fff; 
     font-family: Lato, sans-serif;
     font-size: 28px;
     font-weight: 600;
-    
+    cursor: pointer;
+    border-left: 3px solid transparent;
+    padding-left: 3px;
+}
+
+
+.mnmb_menu_contents ul li:hover{
+    color: #CB1E24;
+    border-color: #fff;
 }
 
 .backup_nav_btns {

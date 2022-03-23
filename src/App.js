@@ -17,6 +17,7 @@ import ClubCharter from "./components/ClubCharter";
 import BlogPosts from "./components/BlogPosts";
 import PhotoGallery from "./components/PhotoGallery";
 import Home from "./pages/Home";
+import PartnerWithUs from "./components/PartnerWithUs";
 
 function App() {
   return (
@@ -31,7 +32,16 @@ function App() {
           <Route  path="/club" element={<Club />} />
           <Route  path="/partner" element={<Photo />} />
           <Route  path="/photo" element={<Partner />} />
-        </Routes>
+        {/* <MainNav />
+        <Routes> 
+          <Route exact path="/" element={<LandingPage />} />
+          <Route  path="/about" element={<AboutUs />} />
+          <Route  path="/events" element={<EventsPage />} />
+          <Route  path="/clubCharter" element={<ClubCharter />} />
+          <Route  path="/blogPosts" element={<BlogPosts />} />
+          <Route  path="/photoGallery" element={<PhotoGallery />} />
+          <Route  path="/partner" element={<PartnerWithUs />} />
+        */}</Routes> 
         <Footer />
       </div>
     </BrowserRouter>

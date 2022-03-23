@@ -52,7 +52,8 @@ const BannerSliderHome = () => {
                 <img src={banner_img} alt="" />
             </div>
         </div>  */}
-		</>
+		
+        </>  
     )
 } 
 

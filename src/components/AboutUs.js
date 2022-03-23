@@ -48,6 +48,49 @@ const Wrapper = styled.section`
            }
        }
    }
+   .about_page_section2{
+     padding:10% 0;
+     .aps2_img_box{
+       margin-bottom:20px;
+     }
+   }
+   .what_we_do{
+     @media(min-width:992px){
+       display:flex;
+       justify-content:space-between;
+       
+       p{
+         width:55%;
+       }
+     }
+     p{
+       font-family:${props => props.theme.fam.semibold};
+       font-size:18px;
+     }
+   }
+   .benefits{
+     padding:5%;
+     text-align:left;
+     img{
+       display:none;
+       @media(min-width:768px){
+         display:block;
+         height:80%;
+       }
+     }
+     ul{
+       list-style-type:disc;
+       text-align:left;
+       @media(min-width:768px){
+         width:75%;
+       }
+     }
+   }
+   .fsb{
+     @media(min-width:768px){
+       width:49%;
+     }
+   }
 `
 
 const AboutUs = () => {
@@ -106,12 +149,12 @@ const AboutUs = () => {
         </div>
 
         <div className="what_we_do">
-          <h3 className="wwd_title">What We Do</h3>
-          <p className="wwd_story">
+          <Heading>What We Do</Heading>
+          <Paragraph>
             The Club is a unique platform for decision makers and influential
             members of the society to share knowledge and experiences, discover
             opportunities and cement collaborations.
-          </p>
+          </Paragraph>
         </div>
 
         <div className="three_boxes_container">
@@ -172,13 +215,48 @@ const AboutUs = () => {
                 </div>
                 <div className="wcj_right_box">
                     <img src={wcj_img} alt="" />
-                </div>
+                </div> 
             </div> */}
         <div className="fees_subscriptions">
-          Membership Fees and Subscriptions
+            <div className="fees_subscriptions">Membership Fees and Subscriptions</div>
+
+            <div className="fees_subscription_boxes">
+                <div className="fsb fsb1">
+                    <div className="fsb_contain">
+                        <img src={fees_icon1} alt="" />
+                        <p className="fsb_fees">Individuals: $150</p>
+                        <p className="separate_para1 paras">{"$50 joining fee & $100 annual subscription"}</p>
+                    </div>
+                </div>
+
+                <div className="fsb fsb2">
+                    <div className="fsb_contain">
+                        <img src={fees_icon2} alt="" />
+                        <p className="fsb_fees">Corporates: $500</p>
+                        <p className="separate_para2 paras">{"$150 joining fee & $300 annual subscription "}</p>
+                    </div>
+                </div>
+            </div>
+
+            <div className="benefits">
+                <div className="left_benefits">
+                    <h3 className="benefits_title">Additional Benefits</h3>
+                    <ul className="act_benefit_points">
+                        <li>Access to the Diplomat Business Networking Club’s events, database and resource centre</li>
+                        <li>Free membership to the Diplomat Lounge featuring unique dining experiences, conference rooms and business lounge.</li>
+                        <li>Exclusive lifestyle discounts and privilege service from our partners</li>
+                        <li>Exposure in the Diplomat Magazine physical and digital platforms with preferential rates and placements</li>
+                        <li>Market linkages and business development opportunities</li>
+
+                    </ul>
+                </div>
+                <div className="right_benefits">
+                    <img src={img_overlay} alt="" />
+                </div>
+            </div>
         </div>
 
-        <div className="fees_subscription_boxes">
+        {/* <div className="fees_subscription_boxes">
           <div className="fsb fsb1">
             <div className="fsb_contain">
               <img src={fees_icon1} alt="" />
@@ -192,35 +270,9 @@ const AboutUs = () => {
               <p className="fsb_fees">Corporates: $500</p>
             </div>
           </div>
-        </div>
+        </div> */}
 
-        <div className="benefits">
-          <div className="left_benefits">
-            <h3 className="benefits_title">Additional Benefits</h3>
-            <ul className="act_benefit_points">
-              <li>
-                Access to the Diplomat Business Networking Club’s events,
-                database and resource centre
-              </li>
-              <li>
-                Free membership to the Diplomat Lounge featuring unique dining
-                experiences, conference rooms and business lounge.
-              </li>
-              <li>
-                Exclusive lifestyle discounts and privilege service from our
-                partners
-              </li>
-              <li>
-                Exposure in the Diplomat Magazine physical and digital platforms
-                with preferential rates and placements
-              </li>
-              <li>Market linkages and business development opportunities</li>
-            </ul>
-          </div>
-          <div className="right_benefits">
-            <img src={img_overlay} alt="" />
-          </div>
-        </div>
+        
       </Wrapper>
     );
 }

@@ -7,7 +7,7 @@ import event_img from "../Resources/events_page/event_img.png"
 const EventsPage = () => {
     return( 
         <div className="events_page_container">
-            <ReservedBannerSpace />
+           
             <div className="events_slider">
                 <div className="es_left">
                     <div className="esl_title">

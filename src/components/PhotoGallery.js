@@ -1,6 +1,5 @@
 import React from "react"
 import "../stylesFolder/photo_gallery_page/main_photo_gallery.css"
-import ReservedBannerSpace from "./ReservedBannerSpace"
 import rec1 from "../Resources/photo_gallery/Rectangle 101.png"
 import rec2 from "../Resources/photo_gallery/Rectangle 102.png"
 import rec3 from "../Resources/photo_gallery/Rectangle 103.png"
@@ -15,7 +14,6 @@ import rec10 from "../Resources/photo_gallery/Rectangle 110.png"
 const PhotoGallery = () => { 
     return (
         <div className="photo_gallery_container">
-            <ReservedBannerSpace />
             <div className="photo_gallery_btns">
                 <button className="netherlands_btn">Netherlands Gallery</button>
                 <button className="turkey_btn">Turkey Gallery</button>

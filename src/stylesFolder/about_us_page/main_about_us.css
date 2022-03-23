@@ -4,11 +4,11 @@
     margin: 0 20px;
 }
 
-.about_page_section2 {
+/* .about_page_section2 {
     margin-top: 150px;
     padding: 20px 100px;
     
-}
+} */
 
 
 .aps2_img_box img {
@@ -26,26 +26,6 @@
 }
 
 
-
-.what_we_do {
-    padding: 20px 100px;
-    margin: 50px 0;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: flex-start;
-    justify-content: space-between;
-}
-
-.wwd_title{
-    font-style: normal;
-    font-weight: 600;
-    font-size: 25px;
-    color: #CB1E24;
-}
-
-.wwd_story {
-    font-weight: 300;
-}
 
 .three_boxes_container {
     display: flex;
@@ -104,7 +84,7 @@
     width: 60px;
     margin-bottom: 8px;
 }
-
+ 
 .wcj_params{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -180,7 +160,10 @@
 .wcj_params_box {
     margin: 15px 0;
 }
-
+.rf_btn_read{
+    font-family:'Goldplay-Semibold';
+    font-size:18px;
+}
 .wcj_btn {
     width: 200px;
     padding: 15px;
@@ -212,7 +195,6 @@
     gap: 10px;
     margin: 0 auto;
     margin-bottom: 50px;
-    padding: 0 60px;
 }
 .fsb {
     width: 450px;
@@ -221,16 +203,27 @@
     display: flex;
     align-items: flex-end;
     border-radius: 6px;
+    cursor: pointer;
 }
 
 .fsb1 {
-    background: linear-gradient(rgba(0, 0, 0, 0.212), rgba(0, 0, 0, 0.452)), url("../../Resources/about_page/fees1.png");
+    background: linear-gradient(to bottom,#01010100, #000000), url("../../Resources/about_page/fees1.png");
     background-position: center;
     background-size: cover;
 }
 
+.fsb1:hover .separate_para1 {
+    display: block;
+    animation: animParas 0.4s ease forwards;
+}
+
+.fsb2:hover .separate_para2 {
+    display: block;
+    animation: animParas 0.4s ease forwards;
+}
+
 .fsb2 {
-    background: linear-gradient(rgba(0, 0, 0, 0.212), rgba(0, 0, 0, 0.185)), url("../../Resources/about_page/fees2.png");
+    background: linear-gradient(to bottom,#01010100, #000000), url("../../Resources/about_page/fees2.png");
     background-position: center;
     background-size: cover;
 }
@@ -261,9 +254,6 @@
     border-radius: 8px;
     position: relative;
 
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 30px;
 }
 
 .benefits_title{
@@ -303,12 +293,7 @@
 
 @media (max-width: 1100px) {
   
-    .what_we_do {
-        padding: 20px;
-        margin: 50px 0;
-        display: grid;
-        grid-template-columns: 1fr;
-    }
+  
 
     .fees_subscription_boxes {
         margin-bottom: 50px;
@@ -320,14 +305,10 @@
     .benefits{ 
         width: 100%;
         min-height: 450px;
-        padding: 30px;
         margin-bottom: 60px;
     
         position: relative;
     
-        display: grid;
-        grid-template-columns: 2fr 1fr;
-        gap: 30px;
     }
 
     .right_benefits img {
@@ -377,5 +358,19 @@
    .aps2_details_box{
        width:47%;
    }
-   
+}
+
+
+.paras {
+    color: #fff;
+    font-family: 'Goldplay-Semibold';
+    padding-left: 8px;
+    display: block;
+    margin-top:20px;
+}
+
+@keyframes animParas {
+    to {
+        transform: translateY(0);
+    }
 }

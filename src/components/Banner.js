@@ -6,6 +6,7 @@ const Wrapper = styled.section`
     text-align:center;
     display:flex;
     flex-direction:column;
+    margin:0 2%;
     @media(min-width:992px){
         margin:0 5%;
     }
