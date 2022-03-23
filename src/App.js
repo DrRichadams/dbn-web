@@ -32,7 +32,7 @@ function App() {
           <Route  path="/partner" element={<Photo />} />
           <Route  path="/photo" element={<Partner />} />
         </Routes>
-        {/* <Footer /> */}
+        <Footer />
       </div>
     </BrowserRouter>
   );

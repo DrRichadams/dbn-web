@@ -25,7 +25,7 @@ width:100%;
     display: flex;
     width: 100%;
     position:relative;
-    z-index:9;
+    z-index:90;
     height:max-content;
     justify-content: space-between;
     @media(min-width:768px){
@@ -88,7 +88,7 @@ width:100%;
     @media(min-width:768px){
       display:block;
       position:relative;
-      z-index:11;
+      z-index:99;
       button{
         margin-left:10px;
         border-radius:26px;

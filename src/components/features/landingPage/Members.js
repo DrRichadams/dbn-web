@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/alt-text */
 import React from "react"
 import "../../../stylesFolder/land_members.css"
 import lm1 from "../../../Resources/landing_members/lm1.png"

@@ -10,6 +10,45 @@ import wcj_img from "../Resources/about_page/wcj.png"
 import fees_icon1 from "../Resources/about_page/fees_icon1.png"
 import fees_icon2 from "../Resources/about_page/fees_icon2.png"
 import img_overlay from "../Resources/about_page/img_overlay.png"
+import Heading from "../styled/Heading"
+import Paragraph from "../styled/Paragraph";
+import styled from 'styled-components';
+
+const Wrapper = styled.section`
+    .aps2_details_box{
+        p{
+        margin-bottom:20px;
+        font-size:18px;
+    } 
+
+    }
+    .wwd_title{
+        font-family:${props => props.theme.fam.semibold};
+        
+    }
+   .wwd_story{
+       font-family:${props => props.theme.fam.semibold};
+       @media(min-width:768px){
+           font-size:18px;
+       }
+   }
+   .what_we_do{
+       @media(min-width:768px){
+           padding:0 5%;
+       }
+   }
+   .three_boxes_container{
+    @media(min-width:768px){
+           padding:0 2%;
+           justify-content:space-between;
+           .tb_box{
+               width:30%;
+               max-width:350px;
+               text-align:center;
+           }
+       }
+   }
+`
 
 const AboutUs = () => {
     const [ threeboxes ] = useState([
@@ -43,46 +82,60 @@ const AboutUs = () => {
         { id: uuidv4(), num: "07", text: "Gorvenment Institutions" },
         { id: uuidv4(), num: "08", text: "Creative Sector" },
     ])
-    return(
-        <div className="about_us_page_container">
-            <ReservedBannerSpace />
-            <div className="about_page_section2">
-                <div className="aps2_img_box">
-                    <img src={sec2Img} alt="section 2" />
-                </div>
-                <div className="aps2_details_box">
-                    <h3 className="aps2_details_title">About Us</h3>
-                    <p className="aps2_details_story">
-                        Diplomat Business Networking Club is a high profile social and business networking organisation that connects diplomats, senior business executives, policy makers, government officials, civil society, private sector, media and other key stakeholders in a diverse and multi-cultural atmosphere of positive dialogue, goodwill and opportunity.
-                    <br /><br />
-                         Established by the Diplomacy Appreciation Trust in December 2020, the Club is voluntary, non-profit, non-political and independent.
-                    </p>
-                </div>
-            </div>
+    return (
+      <Wrapper className="about_us_page_container">
+        <div className="about_page_section2">
+          <div className="aps2_img_box">
+            <img src={sec2Img} alt="section 2" />
+          </div>
+          <div className="aps2_details_box">
+            <Heading className="aps2_details_title">About Us</Heading>
+            <Paragraph>
+              Diplomat Business Networking Club is a high profile social and
+              business networking organisation that connects diplomats, senior
+              business executives, policy makers, government officials, civil
+              society, private sector, media and other key stakeholders in a
+              diverse and multi-cultural atmosphere of positive dialogue,
+              goodwill and opportunity.
+            </Paragraph>
+            <Paragraph>
+              Established by the Diplomacy Appreciation Trust in December 2020,
+              the Club is voluntary, non-profit, non-political and independent.
+            </Paragraph>
+          </div>
+        </div>
 
-            <div className="what_we_do">
-                <div className="wwd_title">What We Do</div>
-                <div className="wwd_story">
-                    The Club is a unique platform for decision makers and influential members of the society to share knowledge and experiences, discover opportunities and cement collaborations.
-                </div>
-            </div>
+        <div className="what_we_do">
+          <h3 className="wwd_title">What We Do</h3>
+          <p className="wwd_story">
+            The Club is a unique platform for decision makers and influential
+            members of the society to share knowledge and experiences, discover
+            opportunities and cement collaborations.
+          </p>
+        </div>
 
-            <div className="three_boxes_container">
-                {
-                    threeboxes.map((item, index) => (
-                        <div className="tb_box">
-                            <div className="indicator">{index + 1}</div>
-                            <img src={
-                                item.img === "icon1" ? icon1 : item.img === "icon2" ? icon2 : icon3
-                            } alt="icon" className="tb_icon" />
-                            <h3 className="tb_title">{ item.title }</h3>
-                            <p className="tb_text">{ item.text }</p>
-                        </div>
-                    ))
+        <div className="three_boxes_container">
+          {threeboxes.map((item, index) => (
+            <div className="tb_box">
+              <div className="indicator">{index + 1}</div>
+              <img
+                src={
+                  item.img === "icon1"
+                    ? icon1
+                    : item.img === "icon2"
+                    ? icon2
+                    : icon3
                 }
+                alt="icon"
+                className="tb_icon"
+              />
+              <h3 className="tb_title">{item.title}</h3>
+              <Paragraph>{item.text}</Paragraph>
             </div>
- 
-            {/* <div className="who_can_join_container">
+          ))}
+        </div>
+
+        {/* <div className="who_can_join_container">
                 <div className="wcj_left_box">
                     <h3 className="wcj_title">Who Can Join</h3>
                     <p className="wcj_story1 wcj_story">
@@ -121,42 +174,55 @@ const AboutUs = () => {
                     <img src={wcj_img} alt="" />
                 </div>
             </div> */}
-            <div className="fees_subscriptions">Membership Fees and Subscriptions</div>
-
-            <div className="fees_subscription_boxes">
-                <div className="fsb fsb1">
-                    <div className="fsb_contain">
-                        <img src={fees_icon1} alt="" />
-                        <p className="fsb_fees">Individuals: $150</p>
-                    </div>
-                </div>
-
-                <div className="fsb fsb2">
-                    <div className="fsb_contain">
-                        <img src={fees_icon2} alt="" />
-                        <p className="fsb_fees">Corporates: $500</p>
-                    </div>
-                </div>
-            </div>
-
-            <div className="benefits">
-                <div className="left_benefits">
-                    <h3 className="benefits_title">Additional Benefits</h3>
-                    <ul className="act_benefit_points">
-                        <li>Access to the Diplomat Business Networking Club’s events, database and resource centre</li>
-                        <li>Free membership to the Diplomat Lounge featuring unique dining experiences, conference rooms and business lounge.</li>
-                        <li>Exclusive lifestyle discounts and privilege service from our partners</li>
-                        <li>Exposure in the Diplomat Magazine physical and digital platforms with preferential rates and placements</li>
-                        <li>Market linkages and business development opportunities</li>
-
-                    </ul>
-                </div>
-                <div className="right_benefits">
-                    <img src={img_overlay} alt="" />
-                </div>
-            </div>
+        <div className="fees_subscriptions">
+          Membership Fees and Subscriptions
         </div>
-    )
+
+        <div className="fees_subscription_boxes">
+          <div className="fsb fsb1">
+            <div className="fsb_contain">
+              <img src={fees_icon1} alt="" />
+              <p className="fsb_fees">Individuals: $150</p>
+            </div>
+          </div>
+
+          <div className="fsb fsb2">
+            <div className="fsb_contain">
+              <img src={fees_icon2} alt="" />
+              <p className="fsb_fees">Corporates: $500</p>
+            </div>
+          </div>
+        </div>
+
+        <div className="benefits">
+          <div className="left_benefits">
+            <h3 className="benefits_title">Additional Benefits</h3>
+            <ul className="act_benefit_points">
+              <li>
+                Access to the Diplomat Business Networking Club’s events,
+                database and resource centre
+              </li>
+              <li>
+                Free membership to the Diplomat Lounge featuring unique dining
+                experiences, conference rooms and business lounge.
+              </li>
+              <li>
+                Exclusive lifestyle discounts and privilege service from our
+                partners
+              </li>
+              <li>
+                Exposure in the Diplomat Magazine physical and digital platforms
+                with preferential rates and placements
+              </li>
+              <li>Market linkages and business development opportunities</li>
+            </ul>
+          </div>
+          <div className="right_benefits">
+            <img src={img_overlay} alt="" />
+          </div>
+        </div>
+      </Wrapper>
+    );
 }
 
 export default AboutUs

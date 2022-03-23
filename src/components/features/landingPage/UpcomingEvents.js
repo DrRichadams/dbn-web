@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/alt-text */
 import React, { useState } from "react"
 import "../../../stylesFolder/upcoming_events_home.css"
 import { v4 as uuidv4 } from "uuid"

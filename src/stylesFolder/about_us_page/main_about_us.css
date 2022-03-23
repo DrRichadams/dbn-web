@@ -7,25 +7,16 @@
 .about_page_section2 {
     margin-top: 150px;
     padding: 20px 100px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 50px;
+    
 }
+
 
 .aps2_img_box img {
-    width: 380px;
+    max-width: 380px;
+    width:100%;
+    margin:0 auto;
 }
 
-.aps2_details_title{
-    font-family: 'Oswald';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 30px;
-    line-height: 53px;
-
-    color: #CB1E24;
-}
 
 .aps2_details_story{
     font-family: Lato, sans-serif;
@@ -33,6 +24,8 @@
     font-size: 17px;
     color: #000000;
 }
+
+
 
 .what_we_do {
     padding: 20px 100px;
@@ -44,7 +37,6 @@
 }
 
 .wwd_title{
-    font-family: Lato, sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 25px;
@@ -52,7 +44,6 @@
 }
 
 .wwd_story {
-    font-family: Lato, sans-serif;
     font-weight: 300;
 }
 
@@ -98,7 +89,7 @@
     font-family: oswal, sans-serif;
     font-size: 20px;
 
-    transform: translateY(-45px) translateX(-80px);
+    transform: translateY(-45px) translateX(-110px);
 }
 
 .tb_text {font-family: Lato, sans-serif;
@@ -276,10 +267,11 @@
 }
 
 .benefits_title{
-    font-family: Lato, sans-serif;
+    
     font-style: normal;
     font-weight: 500;
     font-size: 30px;
+    font-family: 'Goldplay-Semibold';
     line-height: 53px;
 
     color: #FFFFFF;
@@ -291,7 +283,7 @@
 
 .act_benefit_points li {
     color: #ffffff;
-    font-family: Lato, sans-serif;
+    font-family: 'Goldplay-Regular';
     font-size: 15px;
     line-height: 25px;
     font-weight: 300;
@@ -310,15 +302,7 @@
 }
 
 @media (max-width: 1100px) {
-    .about_page_section2 {
-        margin-top: 150px;
-        /* padding: 20px 100px; */
-        padding: 20px;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
-        justify-content: flex-start;
-    }
+  
     .what_we_do {
         padding: 20px;
         margin: 50px 0;
@@ -375,4 +359,23 @@
         right: 0;
         /* display: none; */
     }
+}
+@media(min-width:768px){
+    .about_page_section2{
+        display: flex;
+    align-items: center;
+    padding:0 4%;
+    justify-content: space-between;
+    }
+   .aps2_img_box{
+       width:47%;
+   }
+   .aps2_img_box img{
+       width:100%;
+       max-width:unset;
+   }
+   .aps2_details_box{
+       width:47%;
+   }
+   
 }
