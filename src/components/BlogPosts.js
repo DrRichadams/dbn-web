@@ -9,7 +9,7 @@ import lat2 from "../Resources/blog_posts_page/lat2.png"
 import lat3 from "../Resources/blog_posts_page/lat3.png"
 import lat4 from "../Resources/blog_posts_page/lat4.png"
 
-const BlogPosts = () => {
+const BlogPosts = () => { 
 
     const [ searchDate ] = useState([
         { id: uuidv4(), month: "January 2022" },

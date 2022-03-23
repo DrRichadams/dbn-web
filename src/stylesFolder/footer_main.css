@@ -1,6 +1,7 @@
 .main_footer_container {
     /* background-color: #f5f5f5; */
-    padding: 20px 75px;
+    /* padding: 20px 75px; */
+    padding: 20px;
     min-height: 40vh;
 }
 
@@ -58,7 +59,7 @@
 
 
 
-
+ 
 
 
 
@@ -77,7 +78,16 @@
 
 @media (max-width: 850px) {
     .upper_main_footer {
-        grid-template-columns: 1fr;
-        gap: 30px;
+        /* grid-template-columns: 1fr;
+        gap: 30px; */
+        display: flex;
+        flex-direction: column;
+        
+    }
+}
+
+@media (max-width: 450px) {
+    .upper_right_main_footer {
+        flex-direction: column;
     }
 }

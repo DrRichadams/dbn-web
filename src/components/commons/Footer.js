@@ -30,7 +30,7 @@ const Footer = () => {
                             <li>club@diplomat.co.zw</li>
                             <li>+263772166285</li>
                             <li>+263773407466</li>
-                            <li>+263772393069</li>
+                            <li>+263772393069</li> 
                         </ul>
                     </div>
                 </div>

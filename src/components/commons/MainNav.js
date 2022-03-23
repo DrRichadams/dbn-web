@@ -6,7 +6,7 @@ import nav_bar_logo from "../../Resources/NavBarLogo.png"
 import nav_bar_logo2 from "../../Resources/NavBarLogo2.png"
 import { IoClose } from "react-icons/io5";
  
-const MainNav = () => {
+const MainNav = () => { 
     const [ menu_open, setMenu_open ] = useState(0) 
     console.log(menu_open)
     const navigate = useNavigate()

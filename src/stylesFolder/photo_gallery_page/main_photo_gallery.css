@@ -1,7 +1,7 @@
 .photo_gallery_container {
     margin-top: 20px;
 }
-
+ 
 .photo_gallery_btns {
     display: flex;
     align-items: center;
@@ -100,4 +100,24 @@
     border-radius: 7px;
     font-family: Lato, sans-serif;
     font-weight: 600;
+}
+
+@media (max-width: 1050px) {
+    .act_gallery {
+        /* display: grid;
+        grid-template-columns: 1fr;
+        gap: 15px;
+        grid-template-areas: "rec8"
+                             "rec6"
+                             "rec10"
+                             "rec7"
+                             "rec1"
+                             "rec3"
+                             "rec2"
+                             "rec4"
+                             "rec5"
+                             "rec7"; */
+    display: flex;
+    flex-wrap: wrap;
+    }
 }

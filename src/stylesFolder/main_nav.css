@@ -1,8 +1,11 @@
 .main_nav_container {
-    width: 100%;
+    width: 90%; 
     height: 60px;
     /* background-color: aqua; */
-    padding: 50px 30px 10px 30px;
+    /* padding: 50px 30px 10px 30px; */
+    padding: 0;
+    margin: 0 auto;
+    margin-top: 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;

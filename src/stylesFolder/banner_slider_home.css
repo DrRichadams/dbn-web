@@ -114,7 +114,7 @@
         /* right: -20%; */
         z-index: 500;
         transform: translateX(0%);
-    }
+    } 
 }
 
 @media (max-width: 640px)  {
@@ -126,5 +126,6 @@
         z-index: 500;
         width: 300px;
         transform: translateX(0%);
+        display: none;
     }
 }

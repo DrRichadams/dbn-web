@@ -241,6 +241,16 @@
     padding: 0 35px;
 }
 
+.upEvents_mobile {
+    /* position: relative; 
+    z-index: 5000;
+    grid-column: 1 / -1;
+    /* display: flex;
+    width: 100%;
+    flex-direction: column; */ 
+    display: none;
+}
+
 @media (max-width: 960px) {
     .upEventsLeft,
     .upEventsRight {
@@ -248,12 +258,12 @@
     }
 
     .upEvents_mobile {
-        position: relative;
+        position: relative; 
         z-index: 5000;
         grid-column: 1 / -1;
-        /* display: flex;
+        display: flex;
         width: 100%;
-        flex-direction: column; */
+        flex-direction: column;
         
     }
 

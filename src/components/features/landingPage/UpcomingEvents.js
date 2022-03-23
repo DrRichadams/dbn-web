@@ -84,7 +84,7 @@ const UpcomingEvents = () => {
                                     index + 1 === selected ? <FiMinus /> : <FiPlus />
                                 }
                             </div>
-                            <br />
+                            <br /> 
                             <div className="upEvents_mobile_box_contents" style={{display: index + 1 === selected ? "flex" : "none"}}>
                                 <div className="mobi_mid_box">
                                     <div className="mobi_imgs_box">
