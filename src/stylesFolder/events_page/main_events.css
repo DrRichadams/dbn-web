@@ -11,11 +11,22 @@
 }
   
 .es_left {
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: space-around;
     align-items: flex-start;
     padding: 15px;
+    opacity: 0;
+}
+
+.reviewClass {
+    animation: opAnime 0.45s ease forwards;
+}
+
+@keyframes opAnime {
+    to {
+        opacity: 1;
+    }
 }
 
 .esl_title {
