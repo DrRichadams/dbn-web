@@ -13,12 +13,12 @@ const MainNav = () => {
     const menubox_classes = `main_nav_menu_box mnmb_main ${menu_open === 0 ? "close_menu":"open_menu"}`
     return(
         <nav className="main_nav_container">
-            <div className="left_nav_content">
+            <div className="left_nav_content"> 
                 <div className="menu_btn" onClick={() => setMenu_open(1)}>
                     <div className="menu_btn_bar bar1"></div>
                     <div className="menu_btn_bar bar2"></div>
                     <div className="menu_btn_bar bar3"></div>
-                </div>
+                </div> 
                 <img className="logo_img" src={nav_bar_logo} alt="Logo" onClick={() => navigate("/")} />
             </div>
             <div className="right_nav_content">
@@ -42,13 +42,13 @@ const MainNav = () => {
 
                 <div className="mnmb_menu_contents">
                     <ul>
-                        <li>Home</li>
-                        <li>About Us</li>
-                        <li>Events</li>
-                        <li>Blog Posts</li>
-                        <li>Club Charter</li>
-                        <li>Partner With Us</li>
-                        <li>Photo Gallery</li>
+                        <li onClick={() => { navigate("/"); setMenu_open(0) }}>Home</li>
+                        <li onClick={() => { navigate("/about"); setMenu_open(0) }}>About Us</li>
+                        <li onClick={() => { navigate("/events"); setMenu_open(0) }}>Events</li>
+                        <li onClick={() => { navigate("/blogPosts"); setMenu_open(0) }}>Blog Posts</li>
+                        <li onClick={() => { navigate("/clubCharter"); setMenu_open(0) }}>Club Charter</li>
+                        <li onClick={() => { navigate("/partner"); setMenu_open(0) }}>Partner With Us</li>
+                        <li onClick={() => { navigate("/photoGallery"); setMenu_open(0) }}>Photo Gallery</li>
                     </ul>
                     <div className="backup_nav_btns">
                         <button className="backup_nav_btn">Join Us</button>

@@ -9,19 +9,21 @@ import EventsPage from "./components/EventsPage";
 import ClubCharter from "./components/ClubCharter";
 import BlogPosts from "./components/BlogPosts";
 import PhotoGallery from "./components/PhotoGallery";
+import PartnerWithUs from "./components/PartnerWithUs";
 
 function App() {
   return (
     <BrowserRouter>
       <div className="App">
         <MainNav />
-        <Routes>
+        <Routes> 
           <Route exact path="/" element={<LandingPage />} />
           <Route  path="/about" element={<AboutUs />} />
           <Route  path="/events" element={<EventsPage />} />
           <Route  path="/clubCharter" element={<ClubCharter />} />
           <Route  path="/blogPosts" element={<BlogPosts />} />
           <Route  path="/photoGallery" element={<PhotoGallery />} />
+          <Route  path="/partner" element={<PartnerWithUs />} />
         </Routes>
         <Footer />
       </div>
