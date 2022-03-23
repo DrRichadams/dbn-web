@@ -19,12 +19,14 @@
     border-radius: 6px;
     position: relative;
     z-index: 1000;
+    overflow: hidden;
 }
 
 .uEventBox { 
     display: flex;
     align-items: center;
     margin-bottom: 20px;
+    cursor: pointer;
 }
 
 .uEvent_box_vSlide {
@@ -88,6 +90,7 @@
     align-items: center;
     justify-content: space-between;
     margin-bottom: 5px;
+    margin-top: 60px;
 }
 
 .uer_title_title {
@@ -97,6 +100,7 @@
     font-size: 25px;
     line-height: 40px;
     /* identical to box height */
+    /* margin-top: 60px; */
 
     display: flex;
     align-items: center;
@@ -124,6 +128,18 @@
 
 .uer_texts {
     padding: 0 35px;
+    transform: translateX(-100%);
+    display: none;
+}
+
+.uer_texts_current {
+    animation: eventTexts 0.55s ease forwards;
+}
+
+@keyframes eventTexts {
+    to {
+        transform: translateX(0);
+    }
 }
 
 .effects {
