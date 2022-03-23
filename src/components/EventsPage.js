@@ -72,8 +72,8 @@ const EventsPage = () => {
                                 }
                             </div>
                             <div className="esl_controls">
-                                <div className="eslc_left"><FiChevronLeft size={25} onClick={() => goLeft()} /></div>
-                                <div className="eslc_right"><FiChevronRight size={25} onClick={() => goRight(arr)} /></div>
+                                <div className="eslc_left" onClick={() => goLeft()}><FiChevronLeft size={25} /></div>
+                                <div className="eslc_right" onClick={() => goRight(arr)}><FiChevronRight size={25} /></div>
                             </div>
                         </div>
                 
