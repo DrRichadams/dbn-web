@@ -81,8 +81,8 @@ const AboutUs = () => {
                     ))
                 }
             </div>
-
-            <div className="who_can_join_container">
+ 
+            {/* <div className="who_can_join_container">
                 <div className="wcj_left_box">
                     <h3 className="wcj_title">Who Can Join</h3>
                     <p className="wcj_story1 wcj_story">
@@ -120,7 +120,7 @@ const AboutUs = () => {
                 <div className="wcj_right_box">
                     <img src={wcj_img} alt="" />
                 </div>
-            </div>
+            </div> */}
             <div className="fees_subscriptions">Membership Fees and Subscriptions</div>
 
             <div className="fees_subscription_boxes">

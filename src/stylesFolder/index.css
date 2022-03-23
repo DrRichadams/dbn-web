@@ -2,13 +2,20 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    /* overflow-x: hidden; */
+    transition: all 0.45s ease;
+}
+
+html {
+    width: 100%;
 }
 
 body {
     background-color: #f5f5f5;
+    width: 100%;
 }
 
-.rbs_container {
+/* .rbs_container {
     background-color: rgb(177, 49, 49);
     color: #f5f5f5;
     font-family: oswald, sans-serif;
@@ -19,4 +26,4 @@ body {
     justify-content: center;
     align-items: center;
     margin-bottom: 30px;
-}
+} */

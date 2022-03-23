@@ -5,7 +5,7 @@ import { FiChevronRight, FiChevronLeft } from "react-icons/fi"
 import event_img from "../Resources/events_page/event_img.png"
 
 const EventsPage = () => {
-    return(
+    return( 
         <div className="events_page_container">
             <ReservedBannerSpace />
             <div className="events_slider">
@@ -36,7 +36,7 @@ const EventsPage = () => {
                 We organize high profile events with strong networking power, interesting topics & B2B connections for our members
             </div>
         </div>
-    )
+    ) 
 }
 
 export default EventsPage

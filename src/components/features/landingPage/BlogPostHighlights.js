@@ -8,7 +8,7 @@ import bph2_icon from "../../../Resources/landing_blog/bph2_icon.png"
 import bph3_icon from "../../../Resources/landing_blog/bph3_icon.png"
 
 const BlogPostHighlights = () => {
-    return(
+    return( 
         <div className="blog_post_highlights_container">
             <div className="bph_main_title">Blog Post Highlights</div>
             <div className="bph_sec_title">The Club is a unique platform for decision makers and influential members of the society to share knowledge and experiences, discover opportunities and cement collaborations.</div>

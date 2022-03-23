@@ -12,7 +12,7 @@ import rec8 from "../Resources/photo_gallery/Rectangle 108.png"
 import rec9 from "../Resources/photo_gallery/Rectangle 109.png"
 import rec10 from "../Resources/photo_gallery/Rectangle 110.png"
 
-const PhotoGallery = () => {
+const PhotoGallery = () => { 
     return (
         <div className="photo_gallery_container">
             <ReservedBannerSpace />

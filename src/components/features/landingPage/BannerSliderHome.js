@@ -6,6 +6,7 @@ import { v4 as uuidv4 } from "uuid"
 import banner_img from "../../../Resources/banner_img.png";
 import styled from 'styled-components';
 import effect1 from "../../../Resources/effect1.png"
+<<<<<<< HEAD
 // import { Swiper, SwiperSlide } from "swiper/react";
 // import "swiper/css";
 // import "swiper/css/free-mode";
@@ -481,6 +482,9 @@ $color-bullets: $black;
 `
 
  
+=======
+  
+>>>>>>> b9903633577fd91c1a27f8121b742644d9bf54d1
 const BannerSliderHome = () => {
 
     const [ bannerContents, setBannerContents ] = useState([
@@ -524,10 +528,15 @@ const BannerSliderHome = () => {
             </div>
             <div className="picture_box">
                 <img src={banner_img} alt="" />
+<<<<<<< HEAD
             </div> */}
            
         </Wrapper>
+=======
+            </div>
+        </div> 
+>>>>>>> b9903633577fd91c1a27f8121b742644d9bf54d1
     )
-}
+} 
 
 export default BannerSliderHome
