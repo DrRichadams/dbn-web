@@ -42,7 +42,7 @@
 }
 
 .read_more_btn_banner {
-    border: none;
+    border: 2px solid #fff;
     width: 150px;
     padding: 12px;
     background: #FFFFFF;
@@ -58,6 +58,12 @@
     text-align: center;
 
     color: #A32C2F;
+    cursor: pointer;
+}
+
+.read_more_btn_banner:hover {
+    background-color: transparent;
+    color: #fff;
 }
 
 
@@ -120,7 +126,7 @@
 @media (max-width: 640px)  {
     .effect1_banner_land {
         position: absolute;
-        top: 0;
+        top: 0; 
         right: 0;
         /* right: -20%; */
         z-index: 500;

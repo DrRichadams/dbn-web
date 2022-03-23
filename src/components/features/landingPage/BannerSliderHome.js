@@ -47,7 +47,7 @@ const BannerSliderHome = () => {
             <div className="picture_box">
                 <img src={banner_img} alt="" />
             </div>
-        </div> 
+        </div>  
     )
 } 
 

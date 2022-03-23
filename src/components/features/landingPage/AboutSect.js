@@ -14,7 +14,7 @@ const AboutSect = () => {
                 <div className="lf_bus_partnerships"> 
                     <img src={bus_partner} alt="" />
                     <p className="sec_title">Business Partnerships</p>
-                </div>
+                </div> 
                 <div className="networking">
                     <img src={networking} alt="" />
                     <p className="sec_title">Networking</p>

@@ -119,7 +119,7 @@ const AboutUs = () => {
                 </div>
                 <div className="wcj_right_box">
                     <img src={wcj_img} alt="" />
-                </div>
+                </div> 
             </div> */}
             <div className="fees_subscriptions">Membership Fees and Subscriptions</div>
 
@@ -128,6 +128,7 @@ const AboutUs = () => {
                     <div className="fsb_contain">
                         <img src={fees_icon1} alt="" />
                         <p className="fsb_fees">Individuals: $150</p>
+                        <p className="separate_para1 paras">{"$50 joining fee & $100 annual subscription"}</p>
                     </div>
                 </div>
 
@@ -135,6 +136,7 @@ const AboutUs = () => {
                     <div className="fsb_contain">
                         <img src={fees_icon2} alt="" />
                         <p className="fsb_fees">Corporates: $500</p>
+                        <p className="separate_para2 paras">{"$150 joining fee & $300 annual subscription "}</p>
                     </div>
                 </div>
             </div>
