@@ -51,24 +51,45 @@ const BlogPosts = () => {
         },
     ])
 
+
+    //SEARCHING FUNCTIONALITY GOES HERE
+
+    const [ search, setSearch ] = useState("")
+
+    const handleSearchChange = (e) => {
+        setSearch(e.target.value)
+        console.log(search)
+
+        // let newDataset = latest.filter(item => item.title.split(" ").includes(search))
+        // console.log("New data: ", newDataset)
+    }
+
     return(
         <div className="blog_posts_container">
             <ResevedBannerSpace />
             <div className="bp_search_bar">
-                <input type="text" className="bp_search_input" placeholder="Search Article" />
+
+                <input 
+                    type="text" 
+                    className="bp_search_input" 
+                    placeholder="Search Article"
+                    onChange={(e) => handleSearchChange(e)}
+                    value={search}
+                     />
+
                 <div className="bps_icon">
                     <GoSearch size={35} />
                 </div>
                 
             </div>
             <div className="bps_by_month">
-                {
+                { 
                     searchDate.map((item, index) => (
                         <p 
                             key={item.id} 
                             className="search_date"
                             style={{opacity: index + 1 === current ? 1:0.45}}
-                            onClick={() => setCurrent(index + 1)}>{item.month}</p>
+                            >{item.month}</p>
                     ))
                 }
             </div>

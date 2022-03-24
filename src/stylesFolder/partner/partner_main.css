@@ -42,7 +42,13 @@
     color: #fff;
     border-radius: 90px;
     padding: 12px 20px;
-    border: none;
+    border: 2px solid #A32C2F;
+    text-decoration: none;
+}
+
+.partner_bottom_btn:hover {
+    background: transparent;
+    color: #A32C2F;
 }
 
 .partner_button_container {
@@ -56,4 +62,4 @@
         font-size: 30px;
         line-height: 93px;
     }
-}
+} 

@@ -14,9 +14,9 @@ const PartnerWithUs = () => {
             </div>
 
             <div className="partner_button_container">
-                <button className="partner_bottom_btn">Download Club Charter PDF</button>
+                <a download={true} href={process.env.PUBLIC_URL + "/resources_folder/downloads/doc.pdf"} className="partner_bottom_btn">Download Club Charter PDF</a>
             </div>
-        </div>
+        </div> 
     )
 }
 
