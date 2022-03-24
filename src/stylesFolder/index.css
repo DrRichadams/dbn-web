@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     /* overflow-x: hidden; */
-    transition: all 0.45s ease;
+    transition: all 300ms ease;
 }
 
 html {

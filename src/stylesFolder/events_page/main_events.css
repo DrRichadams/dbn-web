@@ -9,7 +9,7 @@
     width: 90%;
     margin: 0 auto;
 }
- 
+  
 .es_left {
     display: flex;
     flex-direction: column;
@@ -95,6 +95,7 @@
 
 .esl_controls div {
     background-color: #fff;
+    color: #CB1E24;
     width: 40px;
     height: 40px;
     display: flex;
@@ -102,6 +103,12 @@
     align-items: center;
     border-radius: 50%;
     box-shadow: 4px 0 18px rgba(0, 0, 0, 0.349);
+    cursor: pointer;
+}
+
+.esl_controls div:hover {
+    background-color: #CB1E24;
+    color: #fff;
 }
 
 .es_right img {
@@ -147,3 +154,7 @@
     margin: 50px 90px;
     }
 }
+/* .eslc_left,
+.eslc_right {
+    background-color: #CB1E24;
+} */

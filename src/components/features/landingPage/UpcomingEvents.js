@@ -13,18 +13,21 @@ const UpcomingEvents = () => {
     const [ eventsData, setEventsData ] = useState([
         {
             id: uuidv4(),
+            title: "Annual General Meeting",
             smallDate: "January 2022",
             bigDate: "12-01-2022",
             story: "The Club is a unique platform for decision makers and influential members of the society. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum"
         },
         {
             id: uuidv4(),
+            title: "Annual General Meeting",
             smallDate: "February 2022",
             bigDate: "12-01-2022",
             story: "The Club is a unique platform for decision makers and influential members of the society. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum"
         },
         {
             id: uuidv4(),
+            title: "Annual General Meeting",
             smallDate: "March 2022",
             bigDate: "12-01-2022",
             story: "The Club is a unique platform for decision makers and influential members of the society. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum"

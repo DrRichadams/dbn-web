@@ -178,6 +178,13 @@ const AboutUs = () => {
           ))}
         </div>
 
+        <div className="who-join">
+          <div className="nner">
+            <Heading></Heading>
+            <Paragraph></Paragraph>
+            <Paragraph></Paragraph>
+          </div>
+        </div>
         {/* <div className="who_can_join_container">
                 <div className="wcj_left_box">
                     <h3 className="wcj_title">Who Can Join</h3>
