@@ -4,6 +4,18 @@ import ReservedBannerSpace from "./ReservedBannerSpace"
 import { FiChevronRight, FiChevronLeft } from "react-icons/fi"
 import event_img from "../Resources/events_page/event_img.png"
 import { v4 as uuidv4 } from "uuid"
+import Paragraph from "../styled/Paragraph";
+import styled from 'styled-components'
+
+const Wrapper = styled.section`
+    .top{
+        @media(min-width:768px){
+            display:flex;
+            align-items:center;
+            padding:0 3%;
+        }
+    }
+`
 
 const EventsPage = () => {
 
@@ -50,9 +62,9 @@ const EventsPage = () => {
     }
 
     return( 
-        <div className="events_page_container">
-            <ReservedBannerSpace />
-            <div className="events_slider">
+        <Wrapper className="events_page_container">
+           <div className="top">
+                <div className="events_slider">
                 {
                     eventsData.map((item, index, arr) => (
                         <div 
@@ -66,11 +78,11 @@ const EventsPage = () => {
                                 </div>
                                 <div className="esl_title_text">{item.title}</div>
                             </div>
-                            <div className="esl_story">
+                            <Paragraph>
                                 {
                                     item.story
                                 }
-                            </div>
+                            </Paragraph>
                             <div className="esl_controls">
                                 <div className="eslc_left" onClick={() => goLeft()}><FiChevronLeft size={25} /></div>
                                 <div className="eslc_right" onClick={() => goRight(arr)}><FiChevronRight size={25} /></div>
@@ -79,15 +91,18 @@ const EventsPage = () => {
                 
                     ))
                 }
-                <div className="es_right">
-                    {/* <img src={event_img} alt="" /> */}
-                    <img src={process.env.PUBLIC_URL + `/resources_folder/events/e_img${selected}.png`} alt="" />
-                </div>
+                
             </div> 
+            <div className="es_right">
+                    
+                    <img src={process.env.PUBLIC_URL + `/resources_folder/events/e_img1.png`} alt="" />
+                </div>
+           </div>
+           
             <div className="events_bottomer">
                 We organize high profile events with strong networking power, interesting topics & B2B connections for our members
             </div>
-        </div>
+        </Wrapper>
     ) 
 }
 

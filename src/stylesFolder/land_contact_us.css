@@ -39,6 +39,7 @@
     /* background-color: #A32C2F; */
     left: 0;
     overflow: hidden;
+    justify-content: center;
 }
 
 .motos_box p {

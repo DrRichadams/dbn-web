@@ -10,6 +10,164 @@ import wcj_img from "../Resources/about_page/wcj.png"
 import fees_icon1 from "../Resources/about_page/fees_icon1.png"
 import fees_icon2 from "../Resources/about_page/fees_icon2.png"
 import img_overlay from "../Resources/about_page/img_overlay.png"
+import Heading from "../styled/Heading"
+import Paragraph from "../styled/Paragraph";
+import styled from 'styled-components';
+import Button from "../styled/Button"
+
+const Wrapper = styled.section`
+    .aps2_details_box{
+        p{
+        margin-bottom:20px;
+        font-size:18px;
+    } 
+
+    }
+    .wwd_title{
+        font-family:${props => props.theme.fam.semibold};
+        
+    }
+   .wwd_story{
+       font-family:${props => props.theme.fam.semibold};
+       @media(min-width:768px){
+           font-size:18px;
+       }
+   }
+   .what_we_do{
+       @media(min-width:768px){
+           padding:0 5%;
+       }
+   }
+   .three_boxes_container{
+    @media(min-width:768px){
+           padding:0 0 10%;
+           gap:0;
+           justify-content:space-between;
+
+           .tb_box{
+              gap:0;
+               width:32%;
+               max-width:380px;
+               text-align:center;
+           }
+       }
+   }
+   .about_page_section2{
+     padding:10% 0;
+     .aps2_img_box{
+       margin-bottom:20px;
+     }
+   }
+   .what_we_do{
+     @media(min-width:992px){
+       display:flex;
+       justify-content:space-between;
+       padding:10% 0 0;
+       p{
+         width:55%;
+       }
+     }
+     p{
+       font-family:${props => props.theme.fam.semibold};
+       font-size:18px;
+     }
+   }
+   .benefits{
+     padding:5%;
+     text-align:left;
+     img{
+       display:none;
+       @media(min-width:768px){
+         display:block;
+         height:80%;
+       }
+     }
+     ul{
+       list-style-type:disc;
+       text-align:left;
+       @media(min-width:768px){
+         width:75%;
+       }
+     }
+   }
+   .fsb{
+     @media(min-width:768px){
+       width:49%;
+     }
+   }
+   .who_join{
+     background:${props => props.theme.color.dimred};
+     border-radius:10px;
+     padding:10% 5%;
+     margin-bottom:30px;
+     color:#ffffff;
+     position:relative;
+     @media(min-width:992px){
+       display:flex;
+       padding: 8% 5%;
+       margin-top:150px 0 100px;
+     }
+     h3{
+       color:#ffffff;
+     }
+     p{
+       margin-bottom:20px;
+     }
+     .inner{
+      @media(min-width:992px){
+         padding-right:20px;
+         width:50%;
+       }
+     }
+     .inner-div{
+       margin-bottom:20px;
+       @media(min-width:768px){
+         display:flex;
+         justify-content:space-between;
+
+          .list{
+            width:48%;
+          }
+       }
+       
+       li{
+         list-style:none;
+         font-family:${props => props.theme.fam.semibold};
+         margin-bottom:10px;
+         font-size:20px;
+         display:flex;
+         justify-content:flex-start;
+         span{
+           font-size:15px;
+           padding-left:5px;
+           border-bottom:1px solid #ffffff;
+           padding-bottom:10px;
+           margin-left:10px;
+           width:100%;
+         }
+       }
+     }
+     button{
+       color:${props => props.theme.color.dimred};
+     }
+     img{
+       width:100%;
+       margin:0 auto;
+        margin-top:20px;
+       max-width:350px;
+       object-fit:contain;
+       @media(min-width:1200px){
+         position:absolute;
+         right:4%;
+         top:-10%;
+         max-width:550px;
+       }
+     }
+   }
+   .fees_subscriptions{
+     padding:10% 0 0;
+   }
+`
 
 const AboutUs = () => {
     const [ threeboxes ] = useState([
@@ -43,46 +201,83 @@ const AboutUs = () => {
         { id: uuidv4(), num: "07", text: "Gorvenment Institutions" },
         { id: uuidv4(), num: "08", text: "Creative Sector" },
     ])
-    return(
-        <div className="about_us_page_container">
-            <ReservedBannerSpace />
-            <div className="about_page_section2">
-                <div className="aps2_img_box">
-                    <img src={sec2Img} alt="section 2" />
-                </div>
-                <div className="aps2_details_box">
-                    <h3 className="aps2_details_title">About Us</h3>
-                    <p className="aps2_details_story">
-                        Diplomat Business Networking Club is a high profile social and business networking organisation that connects diplomats, senior business executives, policy makers, government officials, civil society, private sector, media and other key stakeholders in a diverse and multi-cultural atmosphere of positive dialogue, goodwill and opportunity.
-                    <br /><br />
-                         Established by the Diplomacy Appreciation Trust in December 2020, the Club is voluntary, non-profit, non-political and independent.
-                    </p>
-                </div>
-            </div>
+    return (
+      <Wrapper className="about_us_page_container">
+        <div className="about_page_section2">
+          <div className="aps2_img_box">
+            <img src={sec2Img} alt="section 2" />
+          </div>
+          <div className="aps2_details_box">
+            <Heading className="aps2_details_title">About Us</Heading>
+            <Paragraph>
+              Diplomat Business Networking Club is a high profile social and
+              business networking organisation that connects diplomats, senior
+              business executives, policy makers, government officials, civil
+              society, private sector, media and other key stakeholders in a
+              diverse and multi-cultural atmosphere of positive dialogue,
+              goodwill and opportunity.
+            </Paragraph>
+            <Paragraph>
+              Established by the Diplomacy Appreciation Trust in December 2020,
+              the Club is voluntary, non-profit, non-political and independent.
+            </Paragraph>
+          </div>
+        </div>
 
-            <div className="what_we_do">
-                <div className="wwd_title">What We Do</div>
-                <div className="wwd_story">
-                    The Club is a unique platform for decision makers and influential members of the society to share knowledge and experiences, discover opportunities and cement collaborations.
-                </div>
-            </div>
+        <div className="what_we_do">
+          <Heading>What We Do</Heading>
+          <Paragraph>
+            The Club is a unique platform for decision makers and influential
+            members of the society to share knowledge and experiences, discover
+            opportunities and cement collaborations.
+          </Paragraph>
+        </div>
 
-            <div className="three_boxes_container">
-                {
-                    threeboxes.map((item, index) => (
-                        <div className="tb_box">
-                            <div className="indicator">{index + 1}</div>
-                            <img src={
-                                item.img === "icon1" ? icon1 : item.img === "icon2" ? icon2 : icon3
-                            } alt="icon" className="tb_icon" />
-                            <h3 className="tb_title">{ item.title }</h3>
-                            <p className="tb_text">{ item.text }</p>
-                        </div>
-                    ))
+        <div className="three_boxes_container">
+          {threeboxes.map((item, index) => (
+            <div className="tb_box">
+              <div className="indicator">{index + 1}</div>
+              <img
+                src={
+                  item.img === "icon1"
+                    ? icon1
+                    : item.img === "icon2"
+                    ? icon2
+                    : icon3
                 }
+                alt="icon"
+                className="tb_icon"
+              />
+              <h3 className="tb_title">{item.title}</h3>
+              <Paragraph>{item.text}</Paragraph>
             </div>
- 
-            {/* <div className="who_can_join_container">
+          ))}
+        </div>
+
+        <div className="who_join">
+          <div className="inner">
+            <Heading>Who Can Join</Heading>
+            <Paragraph>Membership into the Club is strictly by invitation by either the Board, Secretariat or full members. Qualifying members are drawn from:</Paragraph>
+            <div className="inner-div">
+              <div className="list">
+                <li>01 <span>The Diplomatic Community</span></li>
+                <li>02 <span>Senior Business Executives</span></li>
+                <li>03 <span>Expatriates</span></li>
+                <li>04 <span>NGO’s and IGO’s</span></li>
+              </div>
+              <div className="list">
+                <li>05 <span>UN Missions</span></li>
+                <li>06 <span>Corporates</span></li>
+                <li>07 <span>Gorvenment Institutions</span></li>
+                <li>08 <span>Creative Sector</span></li>
+              </div>
+            </div>
+            <Paragraph>Individuals, corporates or bodies within the qualifying categories are free to make an application with the Club which will then be reviewed before an invitation to join is submitted.</Paragraph>
+            <Button>Register to Join</Button>
+          </div>
+          <img src="./images/who.png" className="who_img" alt="" />
+        </div>
+        {/* <div className="who_can_join_container">
                 <div className="wcj_left_box">
                     <h3 className="wcj_title">Who Can Join</h3>
                     <p className="wcj_story1 wcj_story">
@@ -121,6 +316,7 @@ const AboutUs = () => {
                     <img src={wcj_img} alt="" />
                 </div> 
             </div> */}
+        <div className="fees_subscriptionss">
             <div className="fees_subscriptions">Membership Fees and Subscriptions</div>
 
             <div className="fees_subscription_boxes">
@@ -158,7 +354,26 @@ const AboutUs = () => {
                 </div>
             </div>
         </div>
-    )
+
+        {/* <div className="fees_subscription_boxes">
+          <div className="fsb fsb1">
+            <div className="fsb_contain">
+              <img src={fees_icon1} alt="" />
+              <p className="fsb_fees">Individuals: $150</p>
+            </div>
+          </div>
+
+          <div className="fsb fsb2">
+            <div className="fsb_contain">
+              <img src={fees_icon2} alt="" />
+              <p className="fsb_fees">Corporates: $500</p>
+            </div>
+          </div>
+        </div> */}
+
+        
+      </Wrapper>
+    );
 }
 
 export default AboutUs

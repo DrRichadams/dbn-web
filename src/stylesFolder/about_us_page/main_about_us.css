@@ -4,28 +4,19 @@
     margin: 0 20px;
 }
 
-.about_page_section2 {
+/* .about_page_section2 {
     margin-top: 150px;
     padding: 20px 100px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 50px;
-}
+    
+} */
+
 
 .aps2_img_box img {
-    width: 380px;
+    max-width: 380px;
+    width:100%;
+    margin:0 auto;
 }
 
-.aps2_details_title{
-    font-family: 'Oswald';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 30px;
-    line-height: 53px;
-
-    color: #CB1E24;
-}
 
 .aps2_details_story{
     font-family: Lato, sans-serif;
@@ -34,27 +25,7 @@
     color: #000000;
 }
 
-.what_we_do {
-    padding: 20px 100px;
-    margin: 50px 0;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: flex-start;
-    justify-content: space-between;
-}
 
-.wwd_title{
-    font-family: Lato, sans-serif;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 25px;
-    color: #CB1E24;
-}
-
-.wwd_story {
-    font-family: Lato, sans-serif;
-    font-weight: 300;
-}
 
 .three_boxes_container {
     display: flex;
@@ -98,7 +69,7 @@
     font-family: oswal, sans-serif;
     font-size: 20px;
 
-    transform: translateY(-45px) translateX(-80px);
+    transform: translateY(-45px) translateX(-110px);
 }
 
 .tb_text {font-family: Lato, sans-serif;
@@ -189,7 +160,10 @@
 .wcj_params_box {
     margin: 15px 0;
 }
-
+.rf_btn_read{
+    font-family:'Goldplay-Semibold';
+    font-size:18px;
+}
 .wcj_btn {
     width: 200px;
     padding: 15px;
@@ -221,7 +195,6 @@
     gap: 10px;
     margin: 0 auto;
     margin-bottom: 50px;
-    padding: 0 60px;
 }
 .fsb {
     width: 450px;
@@ -234,7 +207,7 @@
 }
 
 .fsb1 {
-    background: linear-gradient(rgba(0, 0, 0, 0.377), rgba(0, 0, 0, 0.452)), url("../../Resources/about_page/fees1.png");
+    background: linear-gradient(to bottom,#01010100, #000000), url("../../Resources/about_page/fees1.png");
     background-position: center;
     background-size: cover;
 }
@@ -250,7 +223,7 @@
 }
 
 .fsb2 {
-    background: linear-gradient(rgba(0, 0, 0, 0.445), rgba(0, 0, 0, 0.185)), url("../../Resources/about_page/fees2.png");
+    background: linear-gradient(to bottom,#01010100, #000000), url("../../Resources/about_page/fees2.png");
     background-position: center;
     background-size: cover;
 }
@@ -281,16 +254,14 @@
     border-radius: 8px;
     position: relative;
 
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 30px;
 }
 
 .benefits_title{
-    font-family: Lato, sans-serif;
+    
     font-style: normal;
     font-weight: 500;
     font-size: 30px;
+    font-family: 'Goldplay-Semibold';
     line-height: 53px;
 
     color: #FFFFFF;
@@ -302,7 +273,7 @@
 
 .act_benefit_points li {
     color: #ffffff;
-    font-family: Lato, sans-serif;
+    font-family: 'Goldplay-Regular';
     font-size: 15px;
     line-height: 25px;
     font-weight: 300;
@@ -321,21 +292,8 @@
 }
 
 @media (max-width: 1100px) {
-    .about_page_section2 {
-        margin-top: 150px;
-        /* padding: 20px 100px; */
-        padding: 20px;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
-        justify-content: flex-start;
-    }
-    .what_we_do {
-        padding: 20px;
-        margin: 50px 0;
-        display: grid;
-        grid-template-columns: 1fr;
-    }
+  
+  
 
     .fees_subscription_boxes {
         margin-bottom: 50px;
@@ -347,14 +305,10 @@
     .benefits{ 
         width: 100%;
         min-height: 450px;
-        padding: 30px;
         margin-bottom: 60px;
     
         position: relative;
     
-        display: grid;
-        grid-template-columns: 2fr 1fr;
-        gap: 30px;
     }
 
     .right_benefits img {
@@ -387,14 +341,32 @@
         /* display: none; */
     }
 }
+@media(min-width:768px){
+    .about_page_section2{
+        display: flex;
+    align-items: center;
+    padding:0 4%;
+    justify-content: space-between;
+    }
+   .aps2_img_box{
+       width:47%;
+   }
+   .aps2_img_box img{
+       width:100%;
+       max-width:unset;
+   }
+   .aps2_details_box{
+       width:47%;
+   }
+}
 
 
 .paras {
     color: #fff;
-    font-family: Lato, sans-serif;
+    font-family: 'Goldplay-Semibold';
     padding-left: 8px;
     display: block;
-    transform: translateY(50px);
+    margin-top:20px;
 }
 
 @keyframes animParas {

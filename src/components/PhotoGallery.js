@@ -1,6 +1,5 @@
 import React, { useState } from "react"
 import "../stylesFolder/photo_gallery_page/main_photo_gallery.css"
-import ReservedBannerSpace from "./ReservedBannerSpace"
 import rec1 from "../Resources/photo_gallery/Rectangle 101.png"
 import rec2 from "../Resources/photo_gallery/Rectangle 102.png"
 import rec3 from "../Resources/photo_gallery/Rectangle 103.png"
@@ -19,7 +18,6 @@ const PhotoGallery = () => {
     })
     return (
         <div className="photo_gallery_container">
-            <ReservedBannerSpace />
             <div className="photo_gallery_btns">
                 <button 
                     className={selectGroup.netherlands ? "selected":"not_selected"}

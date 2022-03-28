@@ -1,7 +1,10 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
+/* eslint-disable jsx-a11y/alt-text */
 import React, { useState } from "react"
 import "../../../stylesFolder/banner_slider_home.css"
 import { v4 as uuidv4 } from "uuid"
-import banner_img from "../../../Resources/banner_img.png"
+import banner_img from "../../../Resources/banner_img.png";
+import styled from 'styled-components';
 import effect1 from "../../../Resources/effect1.png"
   
 const BannerSliderHome = () => {
@@ -32,8 +35,9 @@ const BannerSliderHome = () => {
     const [ curDisplay, setCurDisplay ] = useState(1)
  
     return(
-        <div className="banner_slider_home_container">
-            <div className="story_box">
+        < >
+			
+          {/* <div className="story_box">
                 {
                     bannerContents.map((item, index) => (
                         <div className="banner_para">
@@ -47,7 +51,9 @@ const BannerSliderHome = () => {
             <div className="picture_box">
                 <img src={banner_img} alt="" />
             </div>
-        </div>  
+        </div>  */}
+		
+        </>  
     )
 } 
 

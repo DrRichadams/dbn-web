@@ -1,11 +1,39 @@
 import React, { useState } from "react"
 import "../stylesFolder/club_charter_page/main_club_charter.css"
 import { v4 as uuidv4 } from "uuid"
-import ReserverdBannerSpace from "./ReservedBannerSpace"
 import sec2Img from "../Resources/club_charter_page/charter_img.png"
 import icon1 from "../Resources/about_page/icon1.png"
 import icon2 from "../Resources/about_page/icon2.png"
 import icon3 from "../Resources/about_page/icon3.png"
+import Paragraph from "../styled/Paragraph"
+import Heading from "../styled/Heading"
+import styled from 'styled-components';
+
+const Wrapper = styled.section`
+    p{
+        margin-bottom:20px;
+    }
+    .three_boxes_container{
+        text-align:center;
+        @media(min-width:768px){
+            .tb_box{
+                width:30%;
+                max-width:350px;
+                min-height:300px;
+            }
+            .indicator{
+                transform: translateY(-45px) translateX(-135px);
+            }
+        }
+        h3{
+            margin-bottom:20px;
+        }
+    }
+    .about_page_section2{
+        padding-top:50px;
+        padding-bottom:50px;
+    }
+`
 
 const ClubCharter = () => {
     const [ threeboxes ] = useState([
@@ -29,19 +57,18 @@ const ClubCharter = () => {
         },
     ])
     return (
-        <div className="club_charter_container">
-            <ReserverdBannerSpace />
+        <Wrapper className="club_charter_container">
             <div className="about_page_section2">
                 <div className="aps2_img_box">
                     <img src={sec2Img} alt="section 2" />
                 </div>
                 <div className="aps2_details_box">
-                    <h3 className="aps2_details_title">The Club</h3>
-                    <p className="aps2_details_story">
+                    <Heading>The Club</Heading>
+                    <Paragraph className="aps2_details_story">
                         Diplomat Business Networking Club is a high profile social and business networking organisation that connects diplomats, senior business executives, policy makers, government officials, civil society, private sector, media and other key stakeholders in a diverse and multi-cultural atmosphere of positive dialogue, goodwill and opportunity.
-                    <br /><br />
+                  </Paragraph>  <Paragraph>
                         Our membership based, by invitation only organization is, voluntary non-profit, non-political and independent. It was established by the Diplomacy Appreciation Trust in December 2020
-                    </p>
+                    </Paragraph>
                 </div>
             </div>
 
@@ -54,7 +81,7 @@ const ClubCharter = () => {
                                 item.img === "icon1" ? icon1 : item.img === "icon2" ? icon2 : icon3
                             } alt="icon" className="tb_icon" />
                             <h3 className="tb_title">{ item.title }</h3>
-                            <p className="tb_text">{ item.text }</p>
+                            <Paragraph>{ item.text }</Paragraph>
                         </div>
                     ))
                 }
@@ -64,7 +91,7 @@ const ClubCharter = () => {
                     Download Club Charter PDF
                 </a>
             </div>
-        </div>
+        </Wrapper>
     )
 }
 

@@ -1,6 +1,7 @@
 .photo_gallery_container {
     margin-top: 20px;
 }
+
  
 .photo_gallery_btns {
     display: flex;
@@ -137,5 +138,10 @@
                              "rec7"; */
     display: flex;
     flex-wrap: wrap;
+    }
+}
+@media(min-width:768px){
+    .photo_gallery_container {
+        padding:0 15%;
     }
 }
