@@ -7,6 +7,7 @@ const Wrapper = styled.button`
     background:${props => props.bg};
     border-radius:26px;
     border:none;
+    font-family:${props => props.theme.fam.semibold};
     
 `
 

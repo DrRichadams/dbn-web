@@ -6,6 +6,35 @@ import ueBanner from "../../../Resources/upcoming_events/ueBanner.png"
 import bph1_icon from "../../../Resources/upcoming_events/bph1_icon.png"
 import effect1 from "../../../Resources/effect1.png"
 import { FiPlus, FiMinus } from "react-icons/fi";
+import styled from 'styled-components';
+import { Swiper, SwiperSlide } from "swiper/react";
+
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/pagination";
+
+// import required modules
+import { Pagination } from "swiper";
+
+const Wrapper = styled.div`
+    .effects{
+        display:none;
+    }
+    .upEvents_mobile{
+        div{
+            overflow:hidden;
+            img{
+                &:first-child{
+                    transform:scale(1.6);
+                }
+            }
+        }
+    }
+    .mobi_texts{
+        padding:0;
+    }
+    
+`
  
 const UpcomingEvents = () => {
 
@@ -43,7 +72,7 @@ const UpcomingEvents = () => {
     }
 
     return (
-        <>
+        <Wrapper>
         <div className="uerTitle">Upcoming Events</div>
         <div className="upcoming_events_container">
             <div className="upEventsLeft">
@@ -105,10 +134,22 @@ const UpcomingEvents = () => {
                             </div>
                             <br /> 
                             <div className="upEvents_mobile_box_contents" style={{display: index + 1 === selected ? "flex" : "none"}}>
-                                <div className="mobi_mid_box">
+                            <Swiper
+        // direction={"vertical"}
+        pagination={{
+          clickable: true,
+        }}
+        modules={[Pagination]}
+        className="mySwiper"
+      >
+        
+       
+     {eventsData.map((item, i)=>{
+         return <SwiperSlide key={i}>
+             <div className="mobi_mid_box">
                                     <div className="mobi_imgs_box">
-                                        <img src={ueBanner} className="mobi_big_img" />
-                                        <img src={bph1_icon} className="mobi_small_img" />
+                                        <img src={item.ueBanner} className="mobi_big_img" />
+                                        <img src={item.bph1_icon} className="mobi_small_img" />
                                     </div>
                                     <div className="mobi_texts">
                                         <div className="mobi_title_texts">
@@ -118,6 +159,12 @@ const UpcomingEvents = () => {
                                         <p className="mobi_title_story">{item.story}</p> 
                                     </div>
                                 </div>
+        </SwiperSlide>
+     })}
+       
+       
+      </Swiper>
+                               
                             </div>
                         </div>
                     ))
@@ -129,7 +176,7 @@ const UpcomingEvents = () => {
                 <img src={effect1} alt="" className="effect_adjast" />
             </div>
         </div>
-        </>
+        </Wrapper>
     )
 }
 

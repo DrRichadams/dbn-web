@@ -13,6 +13,7 @@ import img_overlay from "../Resources/about_page/img_overlay.png"
 import Heading from "../styled/Heading"
 import Paragraph from "../styled/Paragraph";
 import styled from 'styled-components';
+import Button from "../styled/Button"
 
 const Wrapper = styled.section`
     .aps2_details_box{
@@ -39,11 +40,14 @@ const Wrapper = styled.section`
    }
    .three_boxes_container{
     @media(min-width:768px){
-           padding:0 2%;
+           padding:0 0 10%;
+           gap:0;
            justify-content:space-between;
+
            .tb_box{
-               width:30%;
-               max-width:350px;
+              gap:0;
+               width:32%;
+               max-width:380px;
                text-align:center;
            }
        }
@@ -58,7 +62,7 @@ const Wrapper = styled.section`
      @media(min-width:992px){
        display:flex;
        justify-content:space-between;
-       
+       padding:10% 0 0;
        p{
          width:55%;
        }
@@ -90,6 +94,78 @@ const Wrapper = styled.section`
      @media(min-width:768px){
        width:49%;
      }
+   }
+   .who_join{
+     background:${props => props.theme.color.dimred};
+     border-radius:10px;
+     padding:10% 5%;
+     margin-bottom:30px;
+     color:#ffffff;
+     position:relative;
+     @media(min-width:992px){
+       display:flex;
+       padding: 8% 5%;
+       margin-top:150px 0 100px;
+     }
+     h3{
+       color:#ffffff;
+     }
+     p{
+       margin-bottom:20px;
+     }
+     .inner{
+      @media(min-width:992px){
+         padding-right:20px;
+         width:50%;
+       }
+     }
+     .inner-div{
+       margin-bottom:20px;
+       @media(min-width:768px){
+         display:flex;
+         justify-content:space-between;
+
+          .list{
+            width:48%;
+          }
+       }
+       
+       li{
+         list-style:none;
+         font-family:${props => props.theme.fam.semibold};
+         margin-bottom:10px;
+         font-size:20px;
+         display:flex;
+         justify-content:flex-start;
+         span{
+           font-size:15px;
+           padding-left:5px;
+           border-bottom:1px solid #ffffff;
+           padding-bottom:10px;
+           margin-left:10px;
+           width:100%;
+         }
+       }
+     }
+     button{
+       color:${props => props.theme.color.dimred};
+     }
+     img{
+       width:100%;
+       margin:0 auto;
+        margin-top:20px;
+       max-width:350px;
+       object-fit:contain;
+       @media(min-width:1200px){
+         position:absolute;
+         right:4%;
+         top:-10%;
+         max-width:550px;
+       }
+     }
+   }
+   .fees_subscriptions{
+     padding:10% 0 0;
    }
 `
 
@@ -178,12 +254,28 @@ const AboutUs = () => {
           ))}
         </div>
 
-        <div className="who-join">
-          <div className="nner">
-            <Heading></Heading>
-            <Paragraph></Paragraph>
-            <Paragraph></Paragraph>
+        <div className="who_join">
+          <div className="inner">
+            <Heading>Who Can Join</Heading>
+            <Paragraph>Membership into the Club is strictly by invitation by either the Board, Secretariat or full members. Qualifying members are drawn from:</Paragraph>
+            <div className="inner-div">
+              <div className="list">
+                <li>01 <span>The Diplomatic Community</span></li>
+                <li>02 <span>Senior Business Executives</span></li>
+                <li>03 <span>Expatriates</span></li>
+                <li>04 <span>NGO’s and IGO’s</span></li>
+              </div>
+              <div className="list">
+                <li>05 <span>UN Missions</span></li>
+                <li>06 <span>Corporates</span></li>
+                <li>07 <span>Gorvenment Institutions</span></li>
+                <li>08 <span>Creative Sector</span></li>
+              </div>
+            </div>
+            <Paragraph>Individuals, corporates or bodies within the qualifying categories are free to make an application with the Club which will then be reviewed before an invitation to join is submitted.</Paragraph>
+            <Button>Register to Join</Button>
           </div>
+          <img src="./images/who.png" className="who_img" alt="" />
         </div>
         {/* <div className="who_can_join_container">
                 <div className="wcj_left_box">
@@ -224,7 +316,7 @@ const AboutUs = () => {
                     <img src={wcj_img} alt="" />
                 </div> 
             </div> */}
-        <div className="fees_subscriptions">
+        <div className="fees_subscriptionss">
             <div className="fees_subscriptions">Membership Fees and Subscriptions</div>
 
             <div className="fees_subscription_boxes">

@@ -10,26 +10,33 @@
     margin: 20px 0;
 }
 
-.turkey_btn{
+.selected{
     background: #A32C2F;
     color: #fff;
-    border: none;
+    border: 2px solid #A32C2F;
     width: 180px;
     padding: 12px;
     border-radius: 7px;
     font-family: Lato, sans-serif;
     font-weight: 600;
+    cursor: pointer;
 }
 
-.netherlands_btn {
+.selected:hover {
+    background: transparent;
+    color: #A32C2F;
+}
+
+.not_selected {
     background: transparent;
     color: #000;
-    border: none;
+    border: 2px solid transparent;
     width: 180px;
     padding: 12px;
     border-radius: 7px;
     font-family: Lato, sans-serif;
     font-weight: 600;
+    cursor: pointer;
 }
 
 .act_gallery {
@@ -96,13 +103,24 @@
     height: 50px;
     border: none;
 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+
     background: #A32C2F;
     color: #fff;
+    border: 2px solid #A32C2F;
     border-radius: 7px;
     font-family: Lato, sans-serif;
     font-weight: 600;
 }
 
+.download_gallery_btn:hover {
+    background: transparent;
+    color: #A32C2F;
+}
+ 
 @media (max-width: 1050px) {
     .act_gallery {
         /* display: grid;

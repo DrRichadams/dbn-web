@@ -38,7 +38,7 @@ const Wrapper = styled.section`
 const ClubCharter = () => {
     const [ threeboxes ] = useState([
         {
-            id: uuidv4(),
+            id: uuidv4(), 
             img: "icon1",
             title: "Connections",
             text: "We organize high profile events with strong networking power, interesting topics & B2B connections for our members",
@@ -87,9 +87,9 @@ const ClubCharter = () => {
                 }
             </div>
             <div className="club_charter_btn">
-                <button className="club_charter_btn_btn">
+                <a download={true} href={process.env.PUBLIC_URL + "/resources_folder/downloads/doc.pdf"} className="club_charter_btn_btn">
                     Download Club Charter PDF
-                </button>
+                </a>
             </div>
         </Wrapper>
     )

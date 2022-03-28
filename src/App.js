@@ -18,10 +18,12 @@ import BlogPosts from "./components/BlogPosts";
 import PhotoGallery from "./components/PhotoGallery";
 import Home from "./pages/Home";
 import PartnerWithUs from "./components/PartnerWithUs";
+import ScrollToTop from "./ScrollTop";
 
 function App() {
   return (
-    <BrowserRouter>
+   
+    <BrowserRouter> <ScrollToTop>
       <div className="App">
         <Header />
         <Routes>
@@ -43,8 +45,9 @@ function App() {
           <Route  path="/partner" element={<PartnerWithUs />} />
         */}</Routes> 
         <Footer />
-      </div>
+      </div></ScrollToTop>
     </BrowserRouter>
+    
   );
 }
 

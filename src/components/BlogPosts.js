@@ -1,7 +1,6 @@
 import React, { useState } from "react"
 import "../stylesFolder/blog_posts_page/main_blog_posts_page.css"
 import { v4 as uuidv4 } from "uuid"
-import ResevedBannerSpace from "./ReservedBannerSpace"
 import { GoSearch } from "react-icons/go"
 import article_current from "../Resources/blog_posts_page/article_current1.png"
 import lat1 from "../Resources/blog_posts_page/lat1.png"
@@ -82,19 +81,18 @@ const BlogPosts = () => {
             story: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque atque praesentium iusto, dolores voluptatibus dolorem libero illo in molestiae distinctio.",
         },
     ])
+const [ search, setSearch ] = useState("")
 
+    const handleSearchChange = (e) => {
+        setSearch(e.target.value)
+        console.log(search)
+
+        // let newDataset = latest.filter(item => item.title.split(" ").includes(search))
+        // console.log("New data: ", newDataset)
+    }
     return (
       <Wrapper className="blog_posts_container">
-        <div className="bp_search_bar">
-          <input
-            type="text"
-            className="bp_search_input"
-            placeholder="Search Article"
-          />
-          <div className="bps_icon">
-            <GoSearch size={35} />
-          </div>
-        </div>
+       
         <div className="bps_by_month">
           {searchDate.map((item, index) => (
             <Paragraph

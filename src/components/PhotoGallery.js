@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState } from "react"
 import "../stylesFolder/photo_gallery_page/main_photo_gallery.css"
 import rec1 from "../Resources/photo_gallery/Rectangle 101.png"
 import rec2 from "../Resources/photo_gallery/Rectangle 102.png"
@@ -12,11 +12,25 @@ import rec9 from "../Resources/photo_gallery/Rectangle 109.png"
 import rec10 from "../Resources/photo_gallery/Rectangle 110.png"
 
 const PhotoGallery = () => { 
+    const [ selectGroup, setSelectGroup ] = useState({
+        turkey: true,
+        netherlands: false
+    })
     return (
         <div className="photo_gallery_container">
             <div className="photo_gallery_btns">
-                <button className="netherlands_btn">Netherlands Gallery</button>
-                <button className="turkey_btn">Turkey Gallery</button>
+                <button 
+                    className={selectGroup.netherlands ? "selected":"not_selected"}
+                    onClick={() => setSelectGroup({
+                        turkey: false,
+                        netherlands: true
+                    })}>Netherlands Gallery</button>
+                <button 
+                    className={selectGroup.turkey ? "selected":"not_selected"}
+                    onClick={() => setSelectGroup({
+                        turkey: true,
+                        netherlands: false
+                    })}>Turkey Gallery</button>
             </div>
             <div className="act_gallery">
                 <img src={rec1} alt="" className="rec1" />
@@ -29,10 +43,10 @@ const PhotoGallery = () => {
                 <img src={rec8} alt="" className="rec8" />
                 <img src={rec9} alt="" className="rec9" />
                 <img src={rec10} alt="" className="rec10" />
-            </div>
+            </div> 
 
             <div className="download_gallery_box">
-                <button className="download_gallery_btn">Download Gallery Folder</button>
+                <a download={true} href={process.env.PUBLIC_URL + "/resources_folder/downloads/gallery.zip"} className="download_gallery_btn">Download Gallery Folder</a>
             </div>
         </div>
     )
